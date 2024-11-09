@@ -1,0 +1,208 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\geometry{margin=1in,left=0.6in,right=0.6in,bottom=0.5in}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{chemfig}
+\usetikzlibrary{calc}
+\usepackage{enumitem}
+\usepackage{placeins}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{float}
+\usepackage{amsmath, amssymb, amscd, MnSymbol,mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{bibref}
+\usepackage{bm}
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
+\usepackage{pdfpages}
+
+\usepackage{empheq}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc, angles, quotes}
+\usepackage[oldvoltagedirection]{circuitikz}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{arydshln}
+\usepackage{tcolorbox}
+
+\usepackage{hyperref}
+\usepackage{cancel}
+\usepackage{changepage}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{pgf}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{tikz-3dplot}
+
+\renewcommand{\thechapter}{\Alph{chapter}} % Use letters for parts
+\renewcommand{\chaptername}{Part} % Change "Chapter" to "Part"
+\renewcommand{\thesection}{\Alph{chapter}.\arabic{section}} % Use letters for sections
+
+\usepackage{listings}
+
+\usepackage{minted}
+
+\usepackage{courier}
+\usepackage{xcolor}
+\usepackage{color}
+\def\ni{green!60!black!40!white}
+
+\lstdefinestyle{mypythonstyle}{
+    language=Python,
+    basicstyle=\footnotesize\ttfamily,
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=9pt,
+    showstringspaces=false,
+    frame=single,
+    breaklines=true,
+    keywordstyle=\color{blue!80!black}\bfseries,  % Darker blue and bold for keywords
+    commentstyle=\color{green!60!black},  % Softer gray for comments
+    stringstyle=\color{orange},  % Different color for strings
+    backgroundcolor=\color{gray!5},  % Light gray for background
+    tabsize=4,
+    belowcaptionskip=10pt, % Adjust space below caption
+    morecomment=[l]{//},  % For inline comments
+    literate={~} {$\sim$}{1},  % Converts tilde to a symbol
+}
+
+\lstdefinestyle{matlab}{
+    language=MATLAB,
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    commentstyle=\color{green!60!black},
+    keywordstyle=\color{blue!80!black}\bfseries,
+    stringstyle=\color{red!70!black},
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    framesep=5pt,
+    rulecolor=\color{black!30},
+    backgroundcolor=\color{white!94!gray},
+    emphstyle=\color{purple}\bfseries,
+    emph={[2]\%},
+    emphstyle={[2]\color{green!60!black}},
+    showstringspaces=false,
+    tabsize=4,
+    belowcaptionskip=10pt, % Adjust space below caption
+    morekeywords={import,classdef,properties,methods,end,
+        function,return,if,else,elseif,switch,case,otherwise,
+        for,while,break,continue,try,catch,global,persistent},
+    morecomment=[l][\color{magenta!70!black}]{\%\%},
+    morestring=[b]',
+    literate=
+    *{0}{{{\color{cyan!70!black}0}}}1
+    {1}{{{\color{cyan!70!black}1}}}1
+    {2}{{{\color{cyan!70!black}2}}}1
+    {3}{{{\color{cyan!70!black}3}}}1
+    {4}{{{\color{cyan!70!black}4}}}1
+    {5}{{{\color{cyan!70!black}5}}}1
+    {6}{{{\color{cyan!70!black}6}}}1
+    {7}{{{\color{cyan!70!black}7}}}1
+    {8}{{{\color{cyan!70!black}8}}}1
+    {9}{{{\color{cyan!70!black}9}}}1
+}
+
+\def\link{blue!50!black}
+\makeatletter
+\renewcommand*\env@matrix[1][\arraystretch]{%
+    \edef\arraystretch{#1}%
+    \hskip -\arraycolsep
+    \let\@ifnextchar\new@ifnextchar
+    \array{*{\c@MaxMatrixCols}c}
+}
+\makeatother
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Module: EG4017 - Engineering Mathematics}
+\fancyhead[R]{Page \thepage}
+
+\title{\vspace{3em} \Huge \textbf{Engineering\\ Mathematics and Computing}\\ \vspace{1em} \Large Task 2: Coursework Assessment}
+\author{Student Name: Sakariye Abiikar\\ KID: 2371673}
+\date{Last Updated: November 6, 2024\\ Submission Deadline: December 12, 2024, 5pm \\[1em] Git Repo : \color{blue}\url{https://github.com/sakx7/mathcompuni2}}
+
+\begin{document}
+    
+    \maketitle
+    \thispagestyle{empty}
+    
+    \newpage
+    \thispagestyle{empty}
+    \newgeometry{margin=1in,left=0.6in,right=0.6in,bottom=0in}
+    
+    \chapter{Mathematics}
+    
+    \newpage\centering\restoregeometry
+    
+    \setcounter{page}{1}
+    \fancyhead[L]{Part A: Mathematics}
+    
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q1}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        1. Find \( \int \frac{1}{7x + 6} \, dx \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q2}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        2. Find \( \int \frac{x}{\sqrt{4 - x^2}} \, dx \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q3}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        3. Obtain the general solution of the equation \( \frac{d^2 y}{dx^2} - 18 \frac{dy}{dx} + 81y = 0 \) 
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q4}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        4. Find the particular solution of the differential equation \( \frac{dy}{dx} + 3y x^3 = 0 \), given \( y(0) = 1 \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q5}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        5. If \( z = \frac{11 + 10j}{9 - 3j} \), express both \( \frac{1}{z} \) and \( z + \frac{1}{z} \) in the standard form \( \alpha + \beta j \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q6}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        6. Obtain the general solution of \( \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 5 \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q7}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        7. Find \( \frac{\partial z}{\partial x} \) and \( \frac{\partial z}{\partial y} \) when \( z = x y^4 e^{2x} \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q8}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        8. Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q9}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        9. Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+    \end{tcolorbox}
+    
+    \newpage
+    
+    \begin{tcolorbox}[title={\color{black}\section{Q10}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+        10. Evaluate the integral \( \int_{1}^{3} 4x e^{4x} \, dx \)
+    \end{tcolorbox}
+       
+    
+\end{document}
