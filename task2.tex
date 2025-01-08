@@ -149,6 +149,19 @@
     \begin{tcolorbox}[title={\color{black}\section{Q1}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         1. Find \( \int \frac{1}{7x + 6} \, dx \)
     \end{tcolorbox}
+    To evaluate the integral 
+    \[\int \frac{1}{7x + 6} \, dx\]
+    use substitution, Let 
+    \[u = 7x + 6\]
+    then 
+    \[\frac{du}{dx} = 7 \quad \Rightarrow \quad dx = \frac{du}{7}\]
+    Substituting into the integral, we get
+    \[\int \frac{1}{7x + 6} \, dx = \frac{1}{7} \int \frac{1}{u} \, du\]
+    this is easy
+    \[\frac{1}{7} \int \frac{1}{u} \, du = \frac{1}{7} \ln |u| + C\]
+    Finally, substituting back \( u = 7x + 6 \), we get
+    \[\boxed{\int \frac{1}{7x + 6} \, dx = \frac{1}{7} \ln |7x + 6| + C}\]
+    
     
     \newpage
     
@@ -156,35 +169,173 @@
         2. Find \( \int \frac{x}{\sqrt{4 - x^2}} \, dx \)
     \end{tcolorbox}
     
+    To evaluate the integral 
+    \[\int \frac{x}{\sqrt{4 - x^2}} \, dx\]
+    we can use a substitution method.\\ Let\\[-1.5em] 
+    \[u = 4 - x^2\]
+    then 
+    \[\frac{du}{dx} = -2x \quad \Rightarrow \quad dx = -\frac{du}{2x}\]
+    Substituting into integral, we get
+    \[\int \frac{x}{\sqrt{4 - x^2}} \, dx = \int \frac{x}{\sqrt{u}} \cdot \left(-\frac{du}{2x}\right) = -\frac{1}{2} \int \frac{1}{\sqrt{u}} \, du\]
+    this is easy
+    \[-\frac{1}{2} \int u^{-\frac{1}{2}} \, du = -\frac{1}{2} \cdot 2 \sqrt{u} + C = -\sqrt{u} + C\]
+    Finally, substituting back \( u = 4 - x^2 \), we get
+    \[\boxed{\int \frac{x}{\sqrt{4 - x^2}} \, dx = -\sqrt{4 - x^2} + C}\]
+    
+    
+    
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q3}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         3. Obtain the general solution of the equation \( \frac{d^2 y}{dx^2} - 18 \frac{dy}{dx} + 81y = 0 \) 
     \end{tcolorbox}
     
+    
+
+    \[ \frac{d^2 y}{dx^2} - 18 \frac{dy}{dx} + 81y = 0 \]    
+    We use the ansatz \( y = e^{rx} \), with the respective derivative:
+    \[r^2 e^{rx} - 18r e^{rx} + 81 e^{rx} = 0\]
+    Dividing through by \( e^{rx} \) (which is never zero), we get the characteristic equation:
+    \[ r^2 - 18r + 81 = 0 \]
+    solve this quadratic equation, relatively easy:
+    \[ r^2 - 18r + 81 = (r - 9)(r - 9) = 0 \]
+    This gives us a repeated root:
+    \[ r_1 = r_2 = 9 \]
+    For a second-order linear homogeneous differential equation with constant coefficients and a repeated root \( r \), the general solution is:
+    \[ y(x) = c_1 e^{rx} + c_2 x e^{rx} \]
+    Substituting \( r = 9 \) into the general solution, we get:
+    \[ y(x) = c_1 e^{9x} + c_2 x e^{9x} \]
+    So the correct form of the solution is:
+    \[ \boxed{y(x) = e^{9x} (c_1 + c_2 x)} \]    
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q4}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         4. Find the particular solution of the differential equation \( \frac{dy}{dx} + 3y x^3 = 0 \), given \( y(0) = 1 \)
     \end{tcolorbox}
     
+    \[\frac{dy}{dx} + 3y x^3 = 0\]
+    Separate the variables:
+    \[\frac{1}{y} \, dy = -3x^3 \, dx\]
+    Integrating both sides:
+    \[\int \frac{1}{y} \, dy = \int -3x^3 \, dx\]
+    \[\ln|y| = -\frac{3x^4}{4} + C\]
+    Exponentiating both sides:
+    \begin{align*}
+        y=&\exp\left(-\frac{3x^4}{4} + C\right)\\
+            =&C \exp\left(-\frac{3x^4}{4}\right)
+    \end{align*}
+    Apply the initial condition \( y(0) = 1 \):
+    \[1 = C \exp\left(-\frac{3(0)^4}{4}\right)\]
+    \[C = 1\]
+    Thus, the particular solution is:
+    \[\boxed{y(x) = e^{-\frac{3x^4}{4}}}\]
+        
+    
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q5}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
-        5. If \( z = \frac{11 + 10j}{9 - 3j} \), express both \( \frac{1}{z} \) and \( z + \frac{1}{z} \) in the standard form \( \alpha + \beta j \)
+        5. If \( z = \frac{11 + 10{j}}{9 - 3{j}} \), express both \( \frac{1}{z} \) and \( z + \frac{1}{z} \) in the standard form \( \alpha + \beta {j} \)
     \end{tcolorbox}
     
+    \[z = \frac{11 + 10{j}}{9 - 3 {j}} \quad\Rightarrow\quad \frac{1}{z} = \frac{9 - 3 {j}}{11 + 10{j}}\]
+    rationalize the denominator:
+    \[\frac{1}{z} = \frac{9 - 3 {j}}{11 + 10{j}} = \frac{(9 - 3 {j})(11 - 10 {j})}{(11 + 10 {j})(11 - 10 {j})}\]
+    First, simplify the denominator:
+    \[(11 + 10 {j})(11 - 10 {j}) = 11^2 - (10 {j})^2 = 121 - (-100) = 121 + 100 = 221\]
+    Now simplify the numerator:
+    \[(9 - 3 {j})(11 - 10 {j}) = (9\cdot11) + (9\cdot-10{j}) + (-3{j}\cdot 11) + (-3 {j}\cdot-10{j})\]
+    \[= 99 - 90 {j} - 33 {j}-30 = 69-123 {j}\]
+    Thus:
+    \[\frac{1}{z} = \frac{69-123 {j}}{221}\]
+    Now, break it down:
+    \[\boxed{\frac{1}{z} = \frac{69}{221} + \frac{-123}{221} {j} \approx 0.31 - 0.56 {j}}\]
+
+    Now, calculate \( z + \frac{1}{z} \):
+    First, let's simplify \( z \):
+    \[z = \frac{11 + 10j}{9 - 3j} \cdot \frac{9 + 3j}{9 + 3j} = \frac{(11 + 10j)(9 + 3j)}{(9 - 3j)(9 + 3j)}\]
+    Calculate the denominator:
+    \[(9 - 3j)(9 + 3j) = 9^2 - (3j)^2 = 81 + 9 = 90\]
+    Calculate the numerator:
+    \[(11 + 10j)(9 + 3j) = (11 \cdot 9) + (11 \cdot 3j) + (10j \cdot 9) + (10j \cdot 3j) = 99 + 33j + 90j + 30j^2\]
+    \[= 99 + 123j + 30(-1) = 99 + 123j - 30 = 69 + 123j\]
+    So:
+    \[z = \frac{69 + 123j}{90} = \frac{69}{90} + \frac{123}{90}j = \frac{23}{30} + \frac{41}{30}j\]
+    \[z + \frac{1}{z} = \left( \frac{23}{30} + \frac{41}{30}j \right) + \left( \frac{69}{221} - \frac{123}{221}j \right)\]
+    Find a common denominator for the fractions:
+    \[z + \frac{1}{z} = \frac{23 \cdot 221 + 69 \cdot 30}{30 \cdot 221} + \frac{41 \cdot 221 - 123 \cdot 30}{30 \cdot 221}j\]
+    \[= \frac{7153}{6630} + \frac{5371}{6630}j\]
+    Thus:
+    \[\boxed{z + \frac{1}{z} = \frac{7153}{6630} + \frac{5371}{6630}j \approx 1.08 + 0.81j}\]
+
+
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q6}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         6. Obtain the general solution of \( \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 5 \)
     \end{tcolorbox}
-    
+        To obtain the general solution of the non-homogeneous differential equation:
+        \[ \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 5 \]
+        
+        we follow these steps:
+        
+        \[ \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 0 \]
+        
+        We use the ansatz \( y = e^{rx} \). Substituting this into the homogeneous equation, we get:
+        \[ r^2 e^{rx} - 2r e^{rx} - 48 e^{rx} = 0 \]
+        
+        Dividing through by \( e^{rx} \) (which is never zero), we obtain the characteristic equation:
+        \[ r^2 - 2r - 48 = 0 \]
+        
+        Solving this quadratic equation:
+        \[ r^2 - 2r - 48 = (r - 8)(r + 6) = 0 \]
+        
+        This gives us the roots:
+        \[ r_1 = 8, \quad r_2 = -6 \]
+        
+        Therefore, the general solution to the homogeneous equation is:
+        \[ y_h(x) = c_1 e^{8x} + c_2 e^{-6x} \]
+        
+        Since the non-homogeneous term is a constant (5), we use the ansatz \( y_p = A \), where \( A \) is a constant.
+        
+        Substituting \( y_p = A \) into the non-homogeneous equation:
+        \[ \frac{d^2 A}{dx^2} - 2 \frac{dA}{dx} - 48A = 5 \]
+        
+        Since \( A \) is a constant, its derivatives are zero:
+        \[ -48A = 5 \]
+        
+        Solving for \( A \):
+        \[ A = -\frac{5}{48} \]
+        
+        Therefore, the particular solution is:
+        \[ y_p(x) = -\frac{5}{48} \]
+        
+        The general solution to the non-homogeneous equation is the sum of the homogeneous solution and the particular solution:
+        \[ y(x) = y_h(x) + y_p(x) \]
+        \[ y(x) = c_1 e^{8x} + c_2 e^{-6x} - \frac{5}{48} \]    
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q7}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         7. Find \( \frac{\partial z}{\partial x} \) and \( \frac{\partial z}{\partial y} \) when \( z = x y^4 e^{2x} \)
     \end{tcolorbox}
+    
+    To find \( \frac{\partial z}{\partial x} \), treat \( y \) as a constant:
+    \[z = x y^4 e^{2x}\]
+    Differentiate with respect to \( x \):
+    \[\frac{\partial z}{\partial x} = \frac{\partial}{\partial x} \left( x y^4 e^{2x} \right)\]
+    Use the product rule. For the terms \( x \) and \( y^4 e^{2x} \), we get:
+    \[\frac{\partial z}{\partial x} = \left( \frac{\partial}{\partial x} x \right) y^4 e^{2x} + x \frac{\partial}{\partial x} \left( y^4 e^{2x} \right)\]
+    The derivative of \( x \) with respect to \( x \) is 1, and the derivative of \( y^4 e^{2x} \) with respect to \( x \) is \( y^4 \cdot 2e^{2x} \). Therefore:
+    \[\frac{\partial z}{\partial x} = y^4 e^{2x} + x y^4 \cdot 2e^{2x} = e^{2x}(2x + 1) y^4\]
+    Thus:
+    \[\boxed{\frac{\partial z}{\partial x} = e^{2x} (2x + 1) y^4}\]
+    To find \( \frac{\partial z}{\partial y} \), treat \( x \) as a constant:
+    \[z = x y^4 e^{2x}\]
+    Differentiate with respect to \( y \):
+    \[\frac{\partial z}{\partial y} = \frac{\partial}{\partial y} \left( x y^4 e^{2x} \right)\]
+    Since \( x \) and \( e^{2x} \) are constants with respect to \( y \), we only differentiate \( y^4 \):
+    \[\frac{\partial z}{\partial y} = x e^{2x} \cdot \frac{\partial}{\partial y} y^4 = x e^{2x} \cdot 4y^3\]
+    Thus:
+    \[\boxed{\frac{\partial z}{\partial y} = 4x y^3 e^{2x}}\]
     
     \newpage
     
@@ -192,11 +343,46 @@
         8. Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
     \end{tcolorbox}
     
+    \[\int \frac{x + 9}{x(x + 5)} \, dx\]
+    split the integral:
+    \[\int \frac{x + 9}{x(x + 5)} \, dx = \int \frac{1}{x} \, dx + 4 \int \frac{1}{x(x + 5)} \, dx\]
+    The first integral is straightforward:
+    \[\int \frac{1}{x} \, dx = \ln|x| + C_1\]
+    For the second integral, rewrite:
+    \[\int \frac{1}{x(x + 5)} \, dx = \int \frac{1}{x^2 \left( \frac{5}{x} + 1 \right)} \, dx\]
+    Let \( u = \frac{5}{x} + 1 \), then \( dx = -\frac{x^2}{5} \, du \).
+    Substituting into the integral, we get:
+    \[-\frac{1}{5} \int \frac{1}{u} \, du = -\frac{1}{5} \ln|u| + C_2\]
+    Combing results and Substituting back \( u = \frac{5}{x} + 1 \):
+    \[\ln|x| + 4 \left( -\frac{1}{5} \ln|x + 5| + \frac{1}{5} \ln|x| \right) + C = -\frac{4 \ln\left|x + 5\right| - 9 \ln\left|x\right|}{5} + C\]
+    Thus, the solution is:
+    \[\boxed{\int \frac{x + 9}{x(x + 5)} \, dx =  -\frac{4 \ln\left|x + 5\right| - 9 \ln\left|x\right|}{5} + C}\]
+    
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q9}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         9. Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
     \end{tcolorbox}
+    
+    \[\frac{dy}{dt} + y \cot t = 5 \sin t\]
+    First, we identify the integrating factor \( \mu(t) \):
+    \[\mu(t) = e^{\int \cot t \, dt} = e^{\ln |\sin t|} = |\sin t|\]
+    Multiplying both sides of the differential equation by \( \mu(t) \), we get:
+    \[\sin t \frac{dy}{dt} + y \sin t \cot t = 5 \sin^2 t\]
+    \[\frac{dy}{dt} \sin t  + y\cos(t) = 5 \sin^2 t\]
+    \[u'v+uv'\]
+    using the product rule, the derivative of $y\sin(t)$ with respect to $t$ is the left hand side.
+    \[\frac{d}{dt} (y \sin t) = 5 \sin^2 t\]
+    Integrating both sides, we obtain:
+    \[y \sin t = \int 5 \sin^2 t \, dt\]
+    Using the identity \( \sin^2 t = \frac{1 - \cos 2t}{2} \), we get:
+    \[y \sin t = \int 5 \cdot \frac{1 - \cos 2t}{2} \, dt = \frac{5}{2} \left( \int 1 \, dt - \int \cos 2t \, dt \right)\]
+    \[= \frac{5}{2} \left( t - \frac{\sin 2t}{2} \right) + C\]
+    Solving for \( y \), we get:
+    \[y = \frac{5}{2 \sin t} \left( t - \frac{\sin 2t}{2} \right) + \frac{C}{\sin t}\]
+    Thus, the solution is:
+    \[\boxed{y = C \csc(t) + \frac{5}{2} (t\csc(t)-\cos(t))}\]
+
     
     \newpage
     
@@ -204,5 +390,11 @@
         10. Evaluate the integral \( \int_{1}^{3} 4x e^{4x} \, dx \)
     \end{tcolorbox}
        
-    
+    \[\int_{1}^{3} 4x e^{4x} \, dx\]
+    let \(u=4x \quad dx=\frac{1}{4}\)
+    \[\frac{1}{4}\int_{4}^{12} u e^{u} \, dx\]
+%    \[\frac{1}{4} \left([u e^{u}]_{4}^{12} - \int_{4}^{12} e^{u}\right)\]
+    \[\frac{1}{4} \left([u e^{u}-e^{u}]_{4}^{12}\right)\]
+    \[\frac{1}{4} \left(\left(12 e^{12}-e^{12}\right)-\left(4 e^{4}-e^{4}\right)\right)\]
+    \[\boxed{\int_{1}^{3} 4x e^{4x} \, dx=\frac{11e^{12}-3e^{4}}{4} \approx 4.4753\times10^5}\]
 \end{document}
