@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.22)  8 JAN 2025 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.22)  8 JAN 2025 22:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1507,7 +1507,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166     \newpage
+l.164     \newpage
                    [1
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/sha
@@ -1542,6 +1542,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
+Overfull \hbox (1.85008pt too wide) detected at line 258
+[]
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1552,6 +1556,201 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+! LaTeX Error: Environment tblr undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.335         \begin{tblr}
+                          {
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.337                 row{1} = {font=\bfseries
+                                              }
+Please use the math alphabet \mathbf instead of the \bfseries command. 
+
+! Misplaced alignment tab character &.
+l.339             \text{Global condition:} &
+                                             $x \in \mathbb{R}$ \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.339             \text{Global condition:} & $
+                                              x \in \mathbb{R}$ \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   x
+l.339             \text{Global condition:} & $x
+                                                \in \mathbb{R}$ \\
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.339 ...        \text{Global condition:} & $x \in
+                                                   \mathbb{R}$ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.340             \text{Interval:} &
+                                     $-\infty < x < \infty$
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{equation*} on input line 334 ended by \end{tblr}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.341         \end{tblr}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.342         \]
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{linenomath} on input line 334 ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.342         \]
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.342         \]
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.342         \]
+                
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: \begin{minipage} on input line 319 ended by \end{linenomath}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.342         \]
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.344     \end{minipage}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+\endminipage ...pagefalse \color@endgroup \egroup 
+                                                  \expandafter \@iiiparbox \...
+l.344     \end{minipage}
+                        
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+\endminipage ...\expandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.344     \end{minipage}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Runaway argument?
+{\@checkend {minipage}\expandafter \endgroup \if@endpe \@doendpe \fi \ETC.
+! Paragraph ended before \calc@assign@generic was complete.
+<to be read again> 
+                   \par 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1560,6 +1759,191 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Overfull \vbox (44.14937pt too high) detected at line 350
+ []
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Incompatible list can't be unboxed.
+\bm@c ->\hss \unhbox \@tempboxa 
+                                \hss 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+Sorry, Pandora. (You sneaky devil.)
+I refuse to unbox an \hbox in vertical mode or vice versa.
+And I can't open any boxes in math mode.
+
+! Incomplete \iffalse; all text was ignored after line 350.
+<inserted text> 
+                \fi 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+! Incomplete \iffalse; all text was ignored after line 350.
+<inserted text> 
+                \fi 
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+Runaway text?
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa -3.5e
+x plus-1ex minus-.2ex\relax \let  } 
+! Extra }, or forgotten \endgroup.
+\@iiiparbox ...\else \csname bm@#3\endcsname \fi }
+                                                  \if@pboxsw \m@th $\fi \@en...
+l.350         7.
+                 Find \( \frac{\partial z}{\partial x} \) and \( \frac{\part...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Infinite glue shrinkage found in a paragraph.
+<argument> ...hskip:D \c_zero_dim \fi: \tex_par:D 
+                                                  \hook_use:n {para/after}\@...
+l.351     \end{tcolorbox}
+                         
+The paragraph just ended includes some glue that has
+infinite shrinkability, e.g., `\hskip 0pt minus 1fil'.
+Such glue doesn't belong there---it allows a paragraph
+of any length to fit on one line. But it's safe to proceed,
+since the offensive shrinkability has been made finite.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.351     \end{tcolorbox}
+                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\endtcb@savebox ...efalse \color@endgroup \egroup 
+                                                  \expandafter \@iiiparbox \...
+l.351     \end{tcolorbox}
+                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+\endtcb@savebox ...pandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.351     \end{tcolorbox}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Runaway argument?
+{\@checkend {tcb@savebox}\expandafter \endgroup \if@endpe \@doendpe \fi \ETC.
+! Paragraph ended before \calc@assign@generic was complete.
+<to be read again> 
+                   \par 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1569,6 +1953,191 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Overfull \vbox (44.14937pt too high) detected at line 380
+ []
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Incompatible list can't be unboxed.
+\bm@c ->\hss \unhbox \@tempboxa 
+                                \hss 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+Sorry, Pandora. (You sneaky devil.)
+I refuse to unbox an \hbox in vertical mode or vice versa.
+And I can't open any boxes in math mode.
+
+! Incomplete \iffalse; all text was ignored after line 380.
+<inserted text> 
+                \fi 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+! Incomplete \iffalse; all text was ignored after line 380.
+<inserted text> 
+                \fi 
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+Runaway text?
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa -3.5e
+x plus-1ex minus-.2ex\relax \let  } 
+! Extra }, or forgotten \endgroup.
+\@iiiparbox ...\else \csname bm@#3\endcsname \fi }
+                                                  \if@pboxsw \m@th $\fi \@en...
+l.380         8.
+                 Integrate the function \( \int \frac{x + 9}{x(x + 5)} \, dx \)
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Infinite glue shrinkage found in a paragraph.
+<argument> ...hskip:D \c_zero_dim \fi: \tex_par:D 
+                                                  \hook_use:n {para/after}\@...
+l.381     \end{tcolorbox}
+                         
+The paragraph just ended includes some glue that has
+infinite shrinkability, e.g., `\hskip 0pt minus 1fil'.
+Such glue doesn't belong there---it allows a paragraph
+of any length to fit on one line. But it's safe to proceed,
+since the offensive shrinkability has been made finite.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.381     \end{tcolorbox}
+                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\endtcb@savebox ...efalse \color@endgroup \egroup 
+                                                  \expandafter \@iiiparbox \...
+l.381     \end{tcolorbox}
+                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+\endtcb@savebox ...pandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.381     \end{tcolorbox}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Runaway argument?
+{\@checkend {tcb@savebox}\expandafter \endgroup \if@endpe \@doendpe \fi \ETC.
+! Paragraph ended before \calc@assign@generic was complete.
+<to be read again> 
+                   \par 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1578,6 +2147,529 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Overfull \vbox (44.14937pt too high) detected at line 407
+ []
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Incompatible list can't be unboxed.
+\bm@c ->\hss \unhbox \@tempboxa 
+                                \hss 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+Sorry, Pandora. (You sneaky devil.)
+I refuse to unbox an \hbox in vertical mode or vice versa.
+And I can't open any boxes in math mode.
+
+! Incomplete \iffalse; all text was ignored after line 407.
+<inserted text> 
+                \fi 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+! Incomplete \iffalse; all text was ignored after line 407.
+<inserted text> 
+                \fi 
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+Runaway text?
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+
+LaTeX Warning: Unexpected alignment title={\color {black}\par \@tempskipa -3.5e
+x plus-1ex minus-.2ex\relax \let  } 
+! Extra }, or forgotten \endgroup.
+\@iiiparbox ...\else \csname bm@#3\endcsname \fi }
+                                                  \if@pboxsw \m@th $\fi \@en...
+l.407         9.
+                 Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Infinite glue shrinkage found in a paragraph.
+<argument> ...hskip:D \c_zero_dim \fi: \tex_par:D 
+                                                  \hook_use:n {para/after}\@...
+l.408     \end{tcolorbox}
+                         
+The paragraph just ended includes some glue that has
+infinite shrinkability, e.g., `\hskip 0pt minus 1fil'.
+Such glue doesn't belong there---it allows a paragraph
+of any length to fit on one line. But it's safe to proceed,
+since the offensive shrinkability has been made finite.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.408     \end{tcolorbox}
+                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\endtcb@savebox ...efalse \color@endgroup \egroup 
+                                                  \expandafter \@iiiparbox \...
+l.408     \end{tcolorbox}
+                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+\endtcb@savebox ...pandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.408     \end{tcolorbox}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \def 
+l.411         U
+               se integrating factor \( \mu(t) \):
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \def 
+l.411         U
+               se integrating factor \( \mu(t) \):
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `\def ' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411         U
+               se integrating factor \( \mu(t) \):
+I expected to see one of: + - * / )
+
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.411         U
+               se integrating factor \( \mu(t) \):
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! A <box> was supposed to be here.
+<to be read again> 
+                   t
+l.411         U
+               se integrating factor \( \mu(t) \):
+I was expecting to see \hbox or \vbox or \copy or \box or
+something like that. So you might find something missing in
+your output. But keep trying; you can fix this later.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   b
+l.411         U
+               se integrating factor \( \mu(t) \):
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   b
+l.411         U
+               se integrating factor \( \mu(t) \):
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `b' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411         U
+               se integrating factor \( \mu(t) \):
+I expected to see one of: + - * / )
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.412         \[\mu
+                   (t) = e^{\int \cot t \, dt}\]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.412         \[\mu(t) = e^{\int \cot t \, dt}\]
+                                                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.414         \[\int
+                     \cot t \, dt = \int \frac{1}{\tan t} \, dt = \int \frac...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.414 ..., dt = \int \frac{\cos t}{\sin t} \, dt\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.416         \[u = \sin
+                         t\]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.416         \[u = \sin t\]
+                            
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.417         \[\frac{du}{dt}
+                              = \cos t \quad \Rightarrow \quad dx = \frac{1}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.417         \[\frac{du}{dt}
+                              = \cos t \quad \Rightarrow \quad dx = \frac{1}...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.417 ...arrow \quad dx = \frac{1}{\cos t} \, dt\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.417 ...arrow \quad dx = \frac{1}{\cos t} \, dt\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.418         \[\int
+                     \frac{\cos t}{\sin t} \, dt = \int \frac{1}{u} du = \ln...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.418 ...= \int \frac{1}{u} du = \ln|\sin t\,|+C\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.420         \[\mu
+                   (t) =e^{\ln |\sin t\,|} = |\sin t\,|\]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.420 ...\mu(t) =e^{\ln |\sin t\,|} = |\sin t\,|\]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\endminipage ...pagefalse \color@endgroup \egroup 
+                                                  \expandafter \@iiiparbox \...
+l.422     \end{minipage}
+                        \hfil%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+\endminipage ...\expandafter \@iiiparbox \@mpargs 
+                                                  {\unvbox \@tempboxa }
+l.422     \end{minipage}
+                        \hfil%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \def 
+l.424     w
+           e get:
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \def 
+l.424     w
+           e get:
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `\def ' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.424     w
+           e get:
+I expected to see one of: + - * / )
+
+Runaway argument?
+{b}{minipage}\ifx \reserved@a \@currenvir \else \@badend {minipage}\fi \ETC.
+! Paragraph ended before \@iiminipage was complete.
+<to be read again> 
+                   \par 
+l.441 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.443     \[ t \in
+                   \mathbb{R} : \frac{t}{\pi} \notin \mathbb{Z} \]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.443 ...b{R} : \frac{t}{\pi} \notin \mathbb{Z} \]
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  >\z@ \vskip -\ifdim \prevd...
+l.447     \newpage
+                  
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.447     \newpage
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.447     \newpage
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.447     \newpage
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.447     \newpage
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (3975.934pt too wide) in paragraph at lines 411--447
+ []\OT1/cmr/m/n/12 tcb@savebox[] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1595,37 +2687,85 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10] (./task2.aux)
+[10]
+
+! LaTeX Error: \begin{tcolorbox} on input line 407 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.460 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./task2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `task2.out' has not changed.
-(rerunfilecheck)             Checksum: 3E0CCAFC071B2F5E78F80D0F7D0AEC23;746.
- ) 
+
+
+Package rerunfilecheck Warning: File `task2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `task2.out':
+(rerunfilecheck)             Before: 3E0CCAFC071B2F5E78F80D0F7D0AEC23;746
+(rerunfilecheck)             After:  CCEBF8BFBDB91D5F27B06E1F08E3EEBF;553.
+ )
+(\end occurred inside a group at level 8)
+
+### semi simple group (level 8) entered at line 411 (\begingroup)
+### semi simple group (level 7) entered at line 411 (\begingroup)
+### semi simple group (level 6) entered at line 407 (\begingroup)
+### semi simple group (level 5) entered at line 407 (\begingroup)
+### semi simple group (level 4) entered at line 380 (\begingroup)
+### semi simple group (level 3) entered at line 380 (\begingroup)
+### semi simple group (level 2) entered at line 350 (\begingroup)
+### semi simple group (level 1) entered at line 350 (\begingroup)
+### bottom level
+(\end occurred when \ifx on line 424 was incomplete)
+(\end occurred when \ifx on line 411 was incomplete) 
 Here is how much of TeX's memory you used:
- 61712 strings out of 476106
- 1502753 string characters out of 5793932
- 2232418 words of memory out of 5000000
- 82897 multiletter control sequences out of 15000+600000
+ 61723 strings out of 476106
+ 1503001 string characters out of 5793932
+ 2238418 words of memory out of 5000000
+ 82908 multiletter control sequences out of 15000+600000
  584661 words of font info for 129 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 102i,11n,107p,726b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
->
-Output written on task2.pdf (12 pages, 179946 bytes).
+ 102i,15n,107p,726b,1625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section.1.9} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.1.8} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.1.7} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on task2.pdf (12 pages, 208449 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
+ 211 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  22 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -46,7 +46,7 @@
 \renewcommand{\thesection}{\Alph{chapter}.\arabic{section}} % Use letters for sections
 
 \usepackage{listings}
-
+\usepackage{bm}
 \usepackage{minted}
 
 \usepackage{courier}
@@ -149,15 +149,13 @@
     \begin{tcolorbox}[title={\color{black}\section{Q1}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         1. Find \( \int \frac{1}{7x + 6} \, dx \)
     \end{tcolorbox}
-    To evaluate the integral 
     \[\int \frac{1}{7x + 6} \, dx\]
-    use substitution, Let 
+    Use substitution, Let 
     \[u = 7x + 6\]
-    then 
     \[\frac{du}{dx} = 7 \quad \Rightarrow \quad dx = \frac{du}{7}\]
     Substituting into the integral, we get
     \[\int \frac{1}{7x + 6} \, dx = \frac{1}{7} \int \frac{1}{u} \, du\]
-    this is easy
+    This is a standard integral of the reciprocal
     \[\frac{1}{7} \int \frac{1}{u} \, du = \frac{1}{7} \ln |u| + C\]
     Finally, substituting back \( u = 7x + 6 \), we get
     \[\boxed{\int \frac{1}{7x + 6} \, dx = \frac{1}{7} \ln |7x + 6| + C}\]
@@ -169,15 +167,13 @@
         2. Find \( \int \frac{x}{\sqrt{4 - x^2}} \, dx \)
     \end{tcolorbox}
     
-    To evaluate the integral 
     \[\int \frac{x}{\sqrt{4 - x^2}} \, dx\]
-    we can use a substitution method.\\ Let\\[-1.5em] 
+    Use substitution, Let\\[-1.5em] 
     \[u = 4 - x^2\]
-    then 
     \[\frac{du}{dx} = -2x \quad \Rightarrow \quad dx = -\frac{du}{2x}\]
     Substituting into integral, we get
     \[\int \frac{x}{\sqrt{4 - x^2}} \, dx = \int \frac{x}{\sqrt{u}} \cdot \left(-\frac{du}{2x}\right) = -\frac{1}{2} \int \frac{1}{\sqrt{u}} \, du\]
-    this is easy
+    This is a standard integral of the exponent/power
     \[-\frac{1}{2} \int u^{-\frac{1}{2}} \, du = -\frac{1}{2} \cdot 2 \sqrt{u} + C = -\sqrt{u} + C\]
     Finally, substituting back \( u = 4 - x^2 \), we get
     \[\boxed{\int \frac{x}{\sqrt{4 - x^2}} \, dx = -\sqrt{4 - x^2} + C}\]
@@ -193,20 +189,24 @@
     
 
     \[ \frac{d^2 y}{dx^2} - 18 \frac{dy}{dx} + 81y = 0 \]    
-    We use the ansatz \( y = e^{rx} \), with the respective derivative:
+    We use the ansatz \( y = e^{rx} \), substituting it, along with its corresponding derivatives:
     \[r^2 e^{rx} - 18r e^{rx} + 81 e^{rx} = 0\]
     Dividing through by \( e^{rx} \) (which is never zero), we get the characteristic equation:
     \[ r^2 - 18r + 81 = 0 \]
-    solve this quadratic equation, relatively easy:
-    \[ r^2 - 18r + 81 = (r - 9)(r - 9) = 0 \]
+    We can factorize the quadratic as:
+    \[(r - 9)(r - 9) = 0 \]
     This gives us a repeated root:
     \[ r_1 = r_2 = 9 \]
     For a second-order linear homogeneous differential equation with constant coefficients and a repeated root \( r \), the general solution is:
     \[ y(x) = c_1 e^{rx} + c_2 x e^{rx} \]
     Substituting \( r = 9 \) into the general solution, we get:
     \[ y(x) = c_1 e^{9x} + c_2 x e^{9x} \]
-    So the correct form of the solution is:
-    \[ \boxed{y(x) = e^{9x} (c_1 + c_2 x)} \]    
+    Factorising we get the final solution as:
+    \[ \boxed{y(x) = e^{9x} (c_1 + c_2 x)} \]
+    \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
+    \[x\in \mathbb{R}\]        
+    This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value.
+       
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q4}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
@@ -229,7 +229,9 @@
     \[C = 1\]
     Thus, the particular solution is:
     \[\boxed{y(x) = e^{-\frac{3x^4}{4}}}\]
-        
+    \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
+    \[x\in \mathbb{R}\]        
+    This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value
     
     \newpage
     
@@ -237,103 +239,138 @@
         5. If \( z = \frac{11 + 10{j}}{9 - 3{j}} \), express both \( \frac{1}{z} \) and \( z + \frac{1}{z} \) in the standard form \( \alpha + \beta {j} \)
     \end{tcolorbox}
     
-    \[z = \frac{11 + 10{j}}{9 - 3 {j}} \quad\Rightarrow\quad \frac{1}{z} = \frac{9 - 3 {j}}{11 + 10{j}}\]
-    rationalize the denominator:
-    \[\frac{1}{z} = \frac{9 - 3 {j}}{11 + 10{j}} = \frac{(9 - 3 {j})(11 - 10 {j})}{(11 + 10 {j})(11 - 10 {j})}\]
-    First, simplify the denominator:
-    \[(11 + 10 {j})(11 - 10 {j}) = 11^2 - (10 {j})^2 = 121 - (-100) = 121 + 100 = 221\]
-    Now simplify the numerator:
-    \[(9 - 3 {j})(11 - 10 {j}) = (9\cdot11) + (9\cdot-10{j}) + (-3{j}\cdot 11) + (-3 {j}\cdot-10{j})\]
-    \[= 99 - 90 {j} - 33 {j}-30 = 69-123 {j}\]
-    Thus:
-    \[\frac{1}{z} = \frac{69-123 {j}}{221}\]
-    Now, break it down:
-    \[\boxed{\frac{1}{z} = \frac{69}{221} + \frac{-123}{221} {j} \approx 0.31 - 0.56 {j}}\]
-
-    Now, calculate \( z + \frac{1}{z} \):
-    First, let's simplify \( z \):
-    \[z = \frac{11 + 10j}{9 - 3j} \cdot \frac{9 + 3j}{9 + 3j} = \frac{(11 + 10j)(9 + 3j)}{(9 - 3j)(9 + 3j)}\]
-    Calculate the denominator:
-    \[(9 - 3j)(9 + 3j) = 9^2 - (3j)^2 = 81 + 9 = 90\]
-    Calculate the numerator:
-    \[(11 + 10j)(9 + 3j) = (11 \cdot 9) + (11 \cdot 3j) + (10j \cdot 9) + (10j \cdot 3j) = 99 + 33j + 90j + 30j^2\]
-    \[= 99 + 123j + 30(-1) = 99 + 123j - 30 = 69 + 123j\]
-    So:
-    \[z = \frac{69 + 123j}{90} = \frac{69}{90} + \frac{123}{90}j = \frac{23}{30} + \frac{41}{30}j\]
-    \[z + \frac{1}{z} = \left( \frac{23}{30} + \frac{41}{30}j \right) + \left( \frac{69}{221} - \frac{123}{221}j \right)\]
-    Find a common denominator for the fractions:
-    \[z + \frac{1}{z} = \frac{23 \cdot 221 + 69 \cdot 30}{30 \cdot 221} + \frac{41 \cdot 221 - 123 \cdot 30}{30 \cdot 221}j\]
-    \[= \frac{7153}{6630} + \frac{5371}{6630}j\]
-    Thus:
-    \[\boxed{z + \frac{1}{z} = \frac{7153}{6630} + \frac{5371}{6630}j \approx 1.08 + 0.81j}\]
-
-
+    \begin{minipage}[t]{0.4\textwidth}
+        \[z = \frac{11 + 10j}{9 - 3j}\]    
+        \[z = \frac{(11 + 10j)(9 - 3j)}{(9 - 3j)(9 - 3j)}\]
+        Simplify the denominator:
+        \begin{align*}
+            (9 - 3j)(9 + 3j) &= 9^2 - (3j)^2\\ 
+            &= 81 - (-9)\\ 
+            &= 81 + 9 = 90
+         \end{align*}
+        Simplify the numerator:
+        \begin{align*}
+            (11 + 10j)(9 + 3j) &= (11 \cdot 9) + (11 \cdot 3j)\\ &+ (10j \cdot 9) + (10j \cdot 3j)\\[8pt] 
+            &= 99 + 33j + 90j + 30j^2\\ 
+            &= 99 + 123j + 30(-1)\\ 
+            &= 99 + 123j - 30 \\
+            &= 69 + 123j   
+        \end{align*}
+        So:
+        \begin{align*}
+            z &= \frac{69 + 123j}{90}\\[8pt]
+            &= \frac{69}{90} + \frac{123}{90}j\\[8pt]
+            &= 0.7\dot{6}+1.3\dot{6} j
+        \end{align*}
+    \end{minipage}\hfil%
+    \begin{minipage}[t]{0.4\textwidth}
+        \[\frac{1}{z} = \frac{11 + 10j}{9 - 3j}\]
+        \[\frac{1}{z} = \frac{(9 - 3j)(11 - 10j)}{(11 + 10j)(11 - 10j)}\]
+        Simplify the denominator:
+        \begin{align*}
+            (11 + 10j)(11 - 10j) &= 11^2 - (10j)^2\\
+            &= 121 - (-100)\\
+            &= 121 + 100 = 221
+        \end{align*}
+        The numerator is the conjugate of the previously calculated numerator, so:        
+        \[(9 - 3j)(11 - 10j) = 69 - 123j\]
+        Thus:
+        \begin{align*}
+            \frac{1}{z} &= \frac{69 - 123j}{221}\\[8pt]
+            &= \frac{69}{221} + \frac{-123}{221}j\\[8pt]
+            &\approx \boxed{0.31 - 0.56j}
+        \end{align*}
+    \end{minipage}\\
+    \vspace{2em}
+    now we can calculate $z + \frac{1}{z}$ easily
+        \begin{align*}
+            z+\frac{1}{z} &= \frac{69}{90} + \frac{123}{90}j + \frac{69}{221} + \frac{-123}{221}j\\[8pt]
+            &= \left(\frac{69}{90}+\frac{69}{221}\right) + \left(\frac{123}{90}- \frac{123}{221}\right)j\\[8pt]
+            &\boxed{\approx 1.08 + 0.81 j}
+    \end{align*}
+    in non approximate form this is \(\frac{7153}{6630} +\frac{5371}{6630}j \)
+    
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q6}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         6. Obtain the general solution of \( \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 5 \)
     \end{tcolorbox}
-        To obtain the general solution of the non-homogeneous differential equation:
+
         \[ \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 5 \]
         
-        we follow these steps:
-        
-        \[ \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 0 \]
-        
-        We use the ansatz \( y = e^{rx} \). Substituting this into the homogeneous equation, we get:
-        \[ r^2 e^{rx} - 2r e^{rx} - 48 e^{rx} = 0 \]
-        
-        Dividing through by \( e^{rx} \) (which is never zero), we obtain the characteristic equation:
-        \[ r^2 - 2r - 48 = 0 \]
-        
-        Solving this quadratic equation:
-        \[ r^2 - 2r - 48 = (r - 8)(r + 6) = 0 \]
-        
-        This gives us the roots:
-        \[ r_1 = 8, \quad r_2 = -6 \]
-        
-        Therefore, the general solution to the homogeneous equation is:
-        \[ y_h(x) = c_1 e^{8x} + c_2 e^{-6x} \]
-        
-        Since the non-homogeneous term is a constant (5), we use the ansatz \( y_p = A \), where \( A \) is a constant.
-        
-        Substituting \( y_p = A \) into the non-homogeneous equation:
-        \[ \frac{d^2 A}{dx^2} - 2 \frac{dA}{dx} - 48A = 5 \]
-        
-        Since \( A \) is a constant, its derivatives are zero:
-        \[ -48A = 5 \]
-        
-        Solving for \( A \):
-        \[ A = -\frac{5}{48} \]
-        
+        Since this is \textbf{non-homogenous} we need to solve for the \textbf{complementary solution (\(\bm{y_c}\))} and then the \textbf{particular solution ($\bm{y_p}$)} the general form of the solution the addition of these $$y(t)=y_c(t)+y_p(t)$$
+
+    \begin{minipage}[t]{0.5\textwidth}
+            First lets solve the complementary solution, which solves the associated homogeneous equation:
+            \[ \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 0 \]
+            We use the ansatz \( y = e^{rx} \), substituting it, along with its corresponding derivatives:
+            \[ r^2 e^{rx} - 2r e^{rx} - 48 e^{rx} = 0 \]
+            Dividing through by \( e^{rx} \) (which is never zero), we obtain the characteristic equation:
+            \[ r^2 - 2r - 48 = 0 \]
+            We can factorize the quadratic as:
+            \[(r - 8)(r + 6)=0\]
+            This gives us the roots:
+            \[ r_1 = 8, \quad r_2 = -6 \]
+            The general solution to a second-order linear homogeneous equation is given by:
+            \[ y(x) = c_1 e^{r_1x} + c_2 e^{r_2x} \]
+            In so for our solution this is
+            \[ y_c(x) = c_1 e^{8x} + c_2 e^{-6x} \]
+    \end{minipage}\hfil%        
+    \begin{minipage}[t]{0.45\textwidth}
+        Since the non-homogeneous term is a constant 5, we use the ansatz \(y=A\), where \(A\) is a constant. Since \(A\) is a constant, its derivatives are zero, so:
+        \[-48A = 5\]
+        \[A=-\frac{5}{48} \]
         Therefore, the particular solution is:
         \[ y_p(x) = -\frac{5}{48} \]
+
+        \hrule
+        \vspace{1em}
         
-        The general solution to the non-homogeneous equation is the sum of the homogeneous solution and the particular solution:
+        Now we have complementary solution \((y_c)\) and the particular solution \((y_p)\), The general solution to the non-homogeneous equation can be written as so:
         \[ y(x) = y_h(x) + y_p(x) \]
-        \[ y(x) = c_1 e^{8x} + c_2 e^{-6x} - \frac{5}{48} \]    
+        plugging in the solved values we have
+        \[\boxed{y(x) = c_1 e^{8x} + c_2 e^{-6x} - \frac{5}{48}} \]    
+        \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
+        \[
+        \begin{tblr}{
+                colspec = {l c},
+                row{1} = {font=\bfseries}
+            }
+            \text{Global condition:} & $x \in \mathbb{R}$ \\
+            \text{Interval:} & $-\infty < x < \infty$
+        \end{tblr}
+        \]
+        This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value
+    \end{minipage}        
+    
+    
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q7}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         7. Find \( \frac{\partial z}{\partial x} \) and \( \frac{\partial z}{\partial y} \) when \( z = x y^4 e^{2x} \)
     \end{tcolorbox}
     
-    To find \( \frac{\partial z}{\partial x} \), treat \( y \) as a constant:
     \[z = x y^4 e^{2x}\]
-    Differentiate with respect to \( x \):
-    \[\frac{\partial z}{\partial x} = \frac{\partial}{\partial x} \left( x y^4 e^{2x} \right)\]
-    Use the product rule. For the terms \( x \) and \( y^4 e^{2x} \), we get:
-    \[\frac{\partial z}{\partial x} = \left( \frac{\partial}{\partial x} x \right) y^4 e^{2x} + x \frac{\partial}{\partial x} \left( y^4 e^{2x} \right)\]
-    The derivative of \( x \) with respect to \( x \) is 1, and the derivative of \( y^4 e^{2x} \) with respect to \( x \) is \( y^4 \cdot 2e^{2x} \). Therefore:
-    \[\frac{\partial z}{\partial x} = y^4 e^{2x} + x y^4 \cdot 2e^{2x} = e^{2x}(2x + 1) y^4\]
+    \[\frac{\partial z}{\partial x} = \frac{\partial\left( x y^4 e^{2x} \right)}{\partial x} \]
+    Use the product rule:
+    \[\frac{\partial (u(x)\cdot v(x))}{\partial x} = v\frac{\partial u}{\partial x} + u\frac{\partial v}{\partial x}\]
+    let $u(x) = x$ and $v(x)=y^4 e^{2x}$
+    \[\frac{\partial z}{\partial x}=\frac{\partial\left( x y^4 e^{2x} \right)}{\partial x} = y^4 e^{2x} \frac{\partial (x)}{\partial x} + x \frac{\partial \left( y^4 e^{2x} \right)}{\partial x} \]
+    Easy to solve, just treat \(y\) as a constant and differentiate with respect to \(x\):
+    \[\frac{\partial (x)}{\partial x}=1, \qquad \frac{\partial \left( y^4 e^{2x} \right)}{\partial x} = 2e^{2x}\]
+    now plug in we get
+    \begin{align*}
+        \frac{\partial z}{\partial x} &= y^4 e^{2x} + x y^4 \left(2e^{2x}\right)\\ 
+        &= e^{2x}y^4(2x + 1)
+    \end{align*}    
     Thus:
-    \[\boxed{\frac{\partial z}{\partial x} = e^{2x} (2x + 1) y^4}\]
-    To find \( \frac{\partial z}{\partial y} \), treat \( x \) as a constant:
+    \[\boxed{\frac{\partial z}{\partial x} = e^{2x}y^4(2x + 1)}\]
+    \hrule
     \[z = x y^4 e^{2x}\]
-    Differentiate with respect to \( y \):
-    \[\frac{\partial z}{\partial y} = \frac{\partial}{\partial y} \left( x y^4 e^{2x} \right)\]
-    Since \( x \) and \( e^{2x} \) are constants with respect to \( y \), we only differentiate \( y^4 \):
-    \[\frac{\partial z}{\partial y} = x e^{2x} \cdot \frac{\partial}{\partial y} y^4 = x e^{2x} \cdot 4y^3\]
+    \[\frac{\partial z}{\partial y} = \frac{\partial \left( x y^4 e^{2x} \right)}{\partial y} \]
+    Treat \(x\) as a constant, we only differentiate \( y^4 \):
+    \[\frac{\partial z}{\partial y} = \frac{\partial \left( x y^4 e^{2x} \right)}{\partial y} = x e^{2x} \frac{\partial \left(y^4\right) }{\partial y}\]
+    \[\frac{\partial \left(y^4\right) }{\partial y} = 4y^3\]    
     Thus:
     \[\boxed{\frac{\partial z}{\partial y} = 4x y^3 e^{2x}}\]
     
@@ -344,45 +381,68 @@
     \end{tcolorbox}
     
     \[\int \frac{x + 9}{x(x + 5)} \, dx\]
-    split the integral:
-    \[\int \frac{x + 9}{x(x + 5)} \, dx = \int \frac{1}{x} \, dx + 4 \int \frac{1}{x(x + 5)} \, dx\]
+    Split the integral:
+    \[\int \frac{x + 9}{x(x + 5)} \, dx = \int \frac{\left(x + 5\right) + 4}{x(x + 5)} = \int \frac{1}{x} \, dx + 4 \int \frac{1}{x(x + 5)} \, dx\]
     The first integral is straightforward:
     \[\int \frac{1}{x} \, dx = \ln|x| + C_1\]
     For the second integral, rewrite:
     \[\int \frac{1}{x(x + 5)} \, dx = \int \frac{1}{x^2 \left( \frac{5}{x} + 1 \right)} \, dx\]
-    Let \( u = \frac{5}{x} + 1 \), then \( dx = -\frac{x^2}{5} \, du \).
+    Now use sub
+    \[u = \frac{5}{x} + 1\]
+    \[\frac{du}{dx} = -\frac{5}{x^2} \quad \Rightarrow \quad dx = -\frac{x^2}{5} \, du\]
     Substituting into the integral, we get:
-    \[-\frac{1}{5} \int \frac{1}{u} \, du = -\frac{1}{5} \ln|u| + C_2\]
-    Combing results and Substituting back \( u = \frac{5}{x} + 1 \):
-    \[\ln|x| + 4 \left( -\frac{1}{5} \ln|x + 5| + \frac{1}{5} \ln|x| \right) + C = -\frac{4 \ln\left|x + 5\right| - 9 \ln\left|x\right|}{5} + C\]
+    \[\int -\frac{x^2}{5x^2u} \, du = -\frac{1}{5} \int \frac{1}{u} \, du = -\frac{1}{5} \ln|u| + C_2\]
+    Substituting \( u = \frac{5}{x} + 1 = \frac{5+x}{x} \) and then combing results yields:
+\begin{align*}
+    \int \frac{x + 9}{x(x + 5)} \, dx &= \ln|x| + 4 \left( -\frac{1}{5} \ln\left|\frac{x+5}{x}\right|\right)+C\\
+    &=\ln|x| -\frac{4}{5} \left( \ln|x + 5| - \ln|x| \right) + C\\ 
+    &= -\frac{4 \ln\left|x + 5\right| - 9 \ln\left|x\right|}{5} + C    
+\end{align*}
     Thus, the solution is:
-    \[\boxed{\int \frac{x + 9}{x(x + 5)} \, dx =  -\frac{4 \ln\left|x + 5\right| - 9 \ln\left|x\right|}{5} + C}\]
+    \[\boxed{\int \frac{x + 9}{x(x + 5)} \, dx =  \frac{9 \ln\left|x\right|-4 \ln\left|x + 5\right|}{5} + C}\]
     
     \newpage
     
     \begin{tcolorbox}[title={\color{black}\section{Q9}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         9. Solve the equation \( \frac{dy}{dt} + y \cot t = 5 \sin t \)
-    \end{tcolorbox}
-    
+    \end{tcolorbox}    
     \[\frac{dy}{dt} + y \cot t = 5 \sin t\]
-    First, we identify the integrating factor \( \mu(t) \):
-    \[\mu(t) = e^{\int \cot t \, dt} = e^{\ln |\sin t|} = |\sin t|\]
-    Multiplying both sides of the differential equation by \( \mu(t) \), we get:
-    \[\sin t \frac{dy}{dt} + y \sin t \cot t = 5 \sin^2 t\]
-    \[\frac{dy}{dt} \sin t  + y\cos(t) = 5 \sin^2 t\]
-    \[u'v+uv'\]
-    using the product rule, the derivative of $y\sin(t)$ with respect to $t$ is the left hand side.
+    \begin{minipage}[t]{0.45\textwidth}
+        Use integrating factor \( \mu(t) \):
+        \[\mu(t) = e^{\int \cot t \, dt}\]
+        Since this is a conventional integral, I shouldn't actually include it in the calculation because it should be widely recognised as \(\ln|\sin t \,|\). Regardless, I'll demonstrate how to solve it quickly:        
+        \[\int \cot t \, dt = \int \frac{1}{\tan t} \, dt = \int \frac{\cos t}{\sin t} \, dt\]
+        Now use sub
+        \[u = \sin t\]
+        \[\frac{du}{dt} = \cos t \quad \Rightarrow \quad dx = \frac{1}{\cos t} \, dt\]
+        \[\int \frac{\cos t}{\sin t} \, dt = \int \frac{1}{u} du = \ln|\sin t\,|+C\]
+        so the int factor \(\mu(t)\) is
+        \[\mu(t) =e^{\ln |\sin t\,|} = |\sin t\,|\]
+        Multiply both sides of the differential equation by \( \mu(t) \)
+    \end{minipage}\hfil%
+    \begin{minipage}[t]{0.45\textwidth}
+    we get:
+    \[\frac{dy}{dt}\sin t  + y \sin t \cot t = 5 \sin^2 t\]
+    \[\frac{dy}{dt}\sin t  + y\cos t = 5 \sin^2 t\]
+    The left side of the equation is nothing more than the product rule:
     \[\frac{d}{dt} (y \sin t) = 5 \sin^2 t\]
     Integrating both sides, we obtain:
-    \[y \sin t = \int 5 \sin^2 t \, dt\]
-    Using the identity \( \sin^2 t = \frac{1 - \cos 2t}{2} \), we get:
-    \[y \sin t = \int 5 \cdot \frac{1 - \cos 2t}{2} \, dt = \frac{5}{2} \left( \int 1 \, dt - \int \cos 2t \, dt \right)\]
-    \[= \frac{5}{2} \left( t - \frac{\sin 2t}{2} \right) + C\]
-    Solving for \( y \), we get:
+    \begin{align*}
+        y \sin t &= \int 5 \sin^2 t \, dt\\
+        &= \int 5 \cdot \frac{1 - \cos 2t}{2} \, dt\\ 
+        &= \frac{5}{2} \left( \int 1 \, dt - \int \cos 2t \, dt \right)\\
+        &= \frac{5}{2} \left( t - \frac{\sin 2t}{2} \right) + C
+    \end{align*}
+    \end{minipage}\\
+    In so \(y\) as an explicit solution is:
     \[y = \frac{5}{2 \sin t} \left( t - \frac{\sin 2t}{2} \right) + \frac{C}{\sin t}\]
-    Thus, the solution is:
-    \[\boxed{y = C \csc(t) + \frac{5}{2} (t\csc(t)-\cos(t))}\]
-
+    After some rewriting, the final solution is:
+    \[ \boxed{ = \frac{1}{4} \csc(t) \left( C + 10t - 5 \sin(2t) \right) } \]
+    
+    \textbf{Interval of validity}: The function \( \csc(t) \) is undefined where \( \sin(t) = 0 \), which occurs at \( t = n\pi \), where \( n \) is any integer. Therefore, the interval of validity of the solution is:
+    \[ t \in \mathbb{R} : \frac{t}{\pi} \notin \mathbb{Z} \]
+    This means the solution is valid for all \( t \) being real, except for those values where \( \frac{t}{\pi} \) is an integer. Note for the the interval or global condition in this case, it is not dependant on the constant \(C\).
+    
     
     \newpage
     
