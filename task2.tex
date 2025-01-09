@@ -118,16 +118,21 @@
     \array{*{\c@MaxMatrixCols}c}
 }
 \makeatother
-
+\usepackage{tabularray}
 
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Module: EG4017 - Engineering Mathematics}
 \fancyhead[R]{Page \thepage}
+\usepackage{datetime}
+
 
 \title{\vspace{3em} \Huge \textbf{Engineering\\ Mathematics and Computing}\\ \vspace{1em} \Large Task 2: Coursework Assessment}
 \author{Student Name: Sakariye Abiikar\\ KID: 2371673}
-\date{Last Updated: November 6, 2024\\ Submission Deadline: December 12, 2024, 5pm \\[1em] Git Repo : \color{blue}\url{https://github.com/sakx7/mathcompuni2}}
+\date{Last Updated: \today,\ \currenttime\\ Submission Deadline: Thursday \(9^{\text{th}}\) January, 2025, 5pm \\[1em] Git Repo : \color{blue}\url{https://github.com/sakx7/mathcompuni2}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
 
 \begin{document}
     
@@ -204,7 +209,15 @@
     Factorising we get the final solution as:
     \[ \boxed{y(x) = e^{9x} (c_1 + c_2 x)} \]
     \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
-    \[x\in \mathbb{R}\]        
+    \[
+    \begin{tblr}{
+            colspec = {r c},
+            row{1} = {font=\bfseries}
+        }
+        \textbf{Domain:} & x \in \mathbb{R} \\
+        \textbf{Interval:} & (-\infty, \infty)
+    \end{tblr}
+    \]
     This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value.
        
     \newpage
@@ -230,7 +243,15 @@
     Thus, the particular solution is:
     \[\boxed{y(x) = e^{-\frac{3x^4}{4}}}\]
     \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
-    \[x\in \mathbb{R}\]        
+    \[
+    \begin{tblr}{
+            colspec = {r c},
+            row{1} = {font=\bfseries}
+        }
+        \textbf{Domain:} & x \in \mathbb{R} \\
+        \textbf{Interval:} & (-\infty, \infty)
+    \end{tblr}
+    \]
     This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value
     
     \newpage
@@ -333,14 +354,14 @@
         \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
         \[
         \begin{tblr}{
-                colspec = {l c},
+                colspec = {r c},
                 row{1} = {font=\bfseries}
             }
-            \text{Global condition:} & $x \in \mathbb{R}$ \\
-            \text{Interval:} & $-\infty < x < \infty$
+            \textbf{Domain:} & x \in \mathbb{R} \\
+            \textbf{Interval:} & (-\infty, \infty)
         \end{tblr}
         \]
-        This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value
+        This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value.
     \end{minipage}        
     
     
@@ -435,13 +456,19 @@
     \end{align*}
     \end{minipage}\\
     In so \(y\) as an explicit solution is:
-    \[y = \frac{5}{2 \sin t} \left( t - \frac{\sin 2t}{2} \right) + \frac{C}{\sin t}\]
-    After some rewriting, the final solution is:
-    \[ \boxed{ = \frac{1}{4} \csc(t) \left( C + 10t - 5 \sin(2t) \right) } \]
+    \[\boxed{y = \frac{5}{2 \sin t} \left( t - \frac{\sin 2t}{2} \right) + \frac{C}{\sin t}}\]
+    \textbf{Interval of validity}: \( \sin(t) \) is undefined where \( \sin(t) = 0 \), which occurs at \( t = n\pi \), where \( n \) is any integer. Therefore, the interval of validity of the solution is:
+            \[
+    \begin{tblr}{
+            colspec = {r c},
+            row{1} = {font=\bfseries}
+        }
+        \textbf{Domain:} & t \in \mathbb{R} : \frac{t}{\pi} \notin \mathbb{Z}\\
+        \textbf{Interval:} & \bigcup_{n \in \mathbb{Z}} (n\pi, (n+1)\pi)
+    \end{tblr}
+    \]
+    This means the solution is valid for all \( t \) being real, except for those values where \( \frac{t}{\pi} \) is an integer. The constant \(C\) does not effect the solutions validity regardless of its value.
     
-    \textbf{Interval of validity}: The function \( \csc(t) \) is undefined where \( \sin(t) = 0 \), which occurs at \( t = n\pi \), where \( n \) is any integer. Therefore, the interval of validity of the solution is:
-    \[ t \in \mathbb{R} : \frac{t}{\pi} \notin \mathbb{Z} \]
-    This means the solution is valid for all \( t \) being real, except for those values where \( \frac{t}{\pi} \) is an integer. Note for the the interval or global condition in this case, it is not dependant on the constant \(C\).
     
     
     \newpage
@@ -451,10 +478,160 @@
     \end{tcolorbox}
        
     \[\int_{1}^{3} 4x e^{4x} \, dx\]
-    let \(u=4x \quad dx=\frac{1}{4}\)
+    Use substitution, Let
+    \[u=4x\]
+    \[\frac{du}{dx} = 4 \quad \Rightarrow \quad dx = \frac{1}{4} \, du\]
+    Now change of limits
+    \[4(3) = 12, \qquad 4(1)= 4\]
+    The integral becomes
     \[\frac{1}{4}\int_{4}^{12} u e^{u} \, dx\]
-%    \[\frac{1}{4} \left([u e^{u}]_{4}^{12} - \int_{4}^{12} e^{u}\right)\]
+    Use integration by parts $\int_{b}^{a} uv = [uv]_{b}^{a} - \int_{b}^{a} vu'$    
+    \[
+    \begin{tblr}{
+            colspec = {c c},
+            row{1} = {font=\bfseries}
+        }
+        u=x & dv=e^u \\
+        du=1 & v=e^u
+    \end{tblr}
+    \]
+    \[\frac{1}{4} \left([u e^{u}]_{4}^{12} - \int_{4}^{12} e^{u}\right)\]
     \[\frac{1}{4} \left([u e^{u}-e^{u}]_{4}^{12}\right)\]
-    \[\frac{1}{4} \left(\left(12 e^{12}-e^{12}\right)-\left(4 e^{4}-e^{4}\right)\right)\]
-    \[\boxed{\int_{1}^{3} 4x e^{4x} \, dx=\frac{11e^{12}-3e^{4}}{4} \approx 4.4753\times10^5}\]
+    \[\frac{1}{4} \left(\left(12 e^{12}-e^{12}\right)-\left(4 e^{4}-e^{4}\right)\right)\approx 4.4753\times10^5\]
+    \[\boxed{\int_{1}^{3} 4x e^{4x} \, dx \approx 4.4753\times10^5}\]
+    
+    \newpage
+    \thispagestyle{empty}
+    \newgeometry{margin=1in,left=0.6in,right=0.6in,bottom=0in}
+    
+    \chapter{Computing}
+    
+    \newpage\centering\restoregeometry
+    
+    \setcounter{page}{1}
+    \fancyhead[L]{Part B: Computing}
+    
+    
+
+\begin{tcolorbox}[title={\color{black}\section{Q1}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+    The boiling temperature of water, \(\mathbf{T_B}\), at various altitudes \(\mathbf{h}\), is given in the following table:
+    
+    \[
+    \begin{array}{|c|c|}
+        \hline
+        \textbf{Altitude (m)} & \textbf{Boiling Temperature (\(^\circ\text{C}\))} \\ \hline
+        0 & 100 \\ 
+        2300 & 98.8 \\ 
+        3000 & 95.1 \\ 
+        6100 & 92.2 \\ 
+        7900 & 90.0 \\ 
+        10000 & 81.2 \\ 
+        12000 & 75.6 \\ \hline
+    \end{array}
+    \]
+    
+    Determine a linear equation in the form:
+    \[
+    T_B = mh + b
+    \]
+    that best fits the data. Use this equation to calculate the boiling temperature at \(5000 \, \text{m}\). Additionally, make a plot of the data points and the equation.
+\end{tcolorbox}
+
+\lstinputlisting[style=matlab, title=\textbf{\textcolor{\link}{\texttt{\href{https://github.com/sakx7/mathcompuni2/blob/main/main/q1.m}{main/q1.m}}}}]{main/q1.m}
+
+\newpage
+
+\begin{tcolorbox}[title={\color{black}\section{Q2}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+    The standard air density, \(\mathbf{D}\), at different heights, \(\mathbf{h}\), from sea level up to a height of \(33 \, \text{km}\) is given below:
+    
+    \[
+    \begin{array}{|c|c|}
+        \hline
+        \textbf{Height (km)} & \textbf{Density (kg/m\(^3\))} \\ \hline
+        0 & 1.2 \\ 
+        3 & 0.91 \\ 
+        6 & 0.66 \\ 
+        9 & 0.47 \\ 
+        12 & 0.31 \\ 
+        15 & 0.19 \\ 
+        18 & 0.12 \\ 
+        21 & 0.075 \\ 
+        24 & 0.046 \\ 
+        27 & 0.029 \\ 
+        30 & 0.018 \\ 
+        33 & 0.011 \\ \hline
+    \end{array}
+    \]
+    
+    Make the following four plots of the data points (\(\mathbf{D}\) as a function of \(\mathbf{h}\)) on the same figure:
+    
+    \begin{enumerate}
+        \item Both axes with linear scale.
+        \item \(\mathbf{h}\) with log axis, \(\mathbf{D}\) with linear axis.
+        \item \(\mathbf{h}\) with linear axis, \(\mathbf{D}\) with log axis.
+        \item Both axes with log scale.
+    \end{enumerate}
+    
+    Based on the plots, choose a function (linear, power, exponential, or logarithmic) that best fits the data points and determine its coefficients. Plot the function and the points using linear axes.
+\end{tcolorbox}
+
+\lstinputlisting[style=matlab, title=\textbf{\textcolor{\link}{\texttt{\href{https://github.com/sakx7/mathcompuni2/blob/main/main/q2.m}{main/q2.m}}}}]{main/q2.m}
+
+\newpage
+
+\begin{tcolorbox}[title={\color{black}\section{Q3}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+    Damped free vibrations can be modeled by a block of mass \(\mathbf{m}\) attached to a spring and a dashpot as shown. From Newton's second law of motion, the displacement \(\mathbf{x}\) of the mass as a function of time can be determined by solving the differential equation:
+    
+    \[
+    m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = 0
+    \]
+    
+    where \(k\) is the spring constant and \(c\) is the damping coefficient. If the mass is displaced from its equilibrium position and released, it will oscillate back and forth. The nature of the oscillations depends on the values of \(m\), \(k\), and \(c\).
+    
+    For the system shown, \(m = 10 \, \text{kg}\) and \(k = 28 \, \text{N/m}\). At \(t = 0\), the mass is displaced to \(x = 0.18 \, \text{m}\) and released from rest. Derive expressions for the displacement \(x(t)\) and velocity \(v(t)\), considering the following cases:
+    
+    \begin{enumerate}
+        \item \(c = 3 \, \text{Ns/m}\), \(0 \leq t \leq 20 \, \text{s}\),
+        \item \(c = 50 \, \text{Ns/m}\), \(0 \leq t \leq 10 \, \text{s}\).
+    \end{enumerate}
+    
+    For each case, plot \(x(t)\) and \(v(t)\) versus \(t\) (two plots on one page).
+\end{tcolorbox}
+
+\lstinputlisting[style=matlab, title=\textbf{\textcolor{\link}{\texttt{\href{https://github.com/sakx7/mathcompuni2/blob/main/main/q3.m}{main/q3.m}}}}]{main/q3.m}
+
+\newpage
+
+\begin{tcolorbox}[title={\color{black}\section{Q4}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
+    The currents \(\mathbf{i_1}\), \(\mathbf{i_2}\), and \(\mathbf{i_3}\) in the circuit are described by the equation set:
+    
+    \[
+    \begin{pmatrix}
+        2R & -R & 0 \\
+        -R & 3R & -R \\
+        0 & -R & 2R
+    \end{pmatrix}
+    \begin{pmatrix}
+        i_1 \\ i_2 \\ i_3
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        v_1 \\ 0 \\ v_2
+    \end{pmatrix}
+    \]
+    
+    Here, \(v_1\) and \(v_2\) are applied voltages. The other two currents can be found as:
+    \[
+    i_4 = i_1 - i_2, \quad i_5 = i_2 - i_3.
+    \]
+    
+    \begin{enumerate}
+        \item Use both the matrix inverse and division methods to solve for the currents in terms of \(R\), \(v_1\), and \(v_2\).
+        \item Calculate the numerical values for the currents when \(R = 1000 \, \Omega\), \(v_1 = 100 \, \text{V}\), and \(v_2 = 25 \, \text{V}\).
+    \end{enumerate}
+\end{tcolorbox}
+
+\lstinputlisting[style=matlab, title=\textbf{\textcolor{\link}{\texttt{\href{https://github.com/sakx7/mathcompuni2/blob/main/main/q4.m}{main/q4.m}}}}]{main/q4.m}
+
 \end{document}
+

@@ -1,5 +1,3 @@
-%addpath('functions/');
-
 function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendText, filename)
     if ~isempty(titleText)
         title(ax, titleText);
@@ -20,8 +18,8 @@ function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendT
     ax.TickDir = 'out';
     ax.FontName = 'Calibri';
     ax.FontSize = 9;
-    if ~isempty(legendText) && ~strcmp(legendText, 'None')
-        legend(ax, legendText, 'Location', 'best');
+    if ~isempty(legendText) && ~isequal(legendText, 'None')
+        legend(ax, legendText, 'Location', 'best', 'Interpreter', 'latex');
     end
     if ~isempty(filename) && ~strcmp(filename, 'None')
         outputDir = 'graphs_images';
@@ -48,7 +46,7 @@ end
 
 % Data
 h = [0, 2300, 3000, 6100, 7900, 10000, 12000]; % Altitudes (m)
-t_b = [100, 98.8, 95.1, 92.2, 90, 81.2, 75.6]; % Boiling temperatures (°C)
+t_b = [100, 98.8, 95.1, 92.2, 90, 81.2, 75.6]; % Boiling temperatures (degrees)
 
 % Perform linear regression
 p = polyfit(h, t_b, 1);
@@ -79,6 +77,6 @@ applyPlotFormatting( ...
     fig, ...
     'Altitudes vs. Boiling Temperatures', ... % Title
     'Altitude (m)', ... % X-axis label
-    'Boiling Temperature (°C)', ... % Y-axis label
+    'Boiling Temperature (^\circ{C})', ... % Y-axis label
     {'Data Points', sprintf('h = %.3f t + %.3f', slope, intercept)}, ... % Legend entries
     'altitudes_vs_boiling_temperatures'); % Save filename

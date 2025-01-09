@@ -1,4 +1,5 @@
-%addpath('functions/');
+
+
 
 function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendText, filename)
     if ~isempty(titleText)
@@ -20,8 +21,8 @@ function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendT
     ax.TickDir = 'out';
     ax.FontName = 'Calibri';
     ax.FontSize = 9;
-    if ~isempty(legendText) && ~strcmp(legendText, 'None')
-        legend(ax, legendText, 'Location', 'best');
+    if ~isempty(legendText) && ~isequal(legendText, 'None')
+        legend(ax, legendText, 'Location', 'best', 'Interpreter', 'latex');
     end
     if ~isempty(filename) && ~strcmp(filename, 'None')
         outputDir = 'graphs_images';
@@ -46,11 +47,13 @@ function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendT
 end
 
 
+
+
 % Data
 h = [0 3 6 9 12 15 18 21 24 27 30 33];
 D = [1.2 0.91 0.66 0.47 0.31 0.19 0.12 0.075 0.046 0.029 0.018 0.011];
 
-% Combine the arrays into a 2xN matrix
+% Combine the arrays into a 2xN matrix also known as zipping
 data = [h; D];
 
 % Create first figure
@@ -96,7 +99,16 @@ ax(4).XScale = 'log';
 ax(4).YScale = 'log';
 
 % Fit data to exponential model
+
 res = fit(data(1, :)', data(2, :)', 'exp1');
+
+% fit requires one of the following:
+%   Curve Fitting Toolbox
+%   Model-Based Calibration Toolbox
+%   Predictive Maintenance Toolbox
+%   SimBiology
+%   Statistics and Machine Learning Toolbox 
+
 
 % Create second figure for the fitted curve
 fig2 = figure;

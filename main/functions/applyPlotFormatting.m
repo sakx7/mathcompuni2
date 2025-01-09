@@ -18,7 +18,7 @@ function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendT
     ax.TickDir = 'out';
     ax.FontName = 'Calibri';
     ax.FontSize = 9;
-    if ~isempty(legendText) && ~strcmp(legendText, 'None')
+    if ~isempty(legendText) && ~isequal(legendText, 'None')
         legend(ax, legendText, 'Location', 'best');
     end
     if ~isempty(filename) && ~strcmp(filename, 'None')
