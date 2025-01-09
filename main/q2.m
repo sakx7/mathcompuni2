@@ -1,6 +1,3 @@
-
-
-
 function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendText, filename)
     if ~isempty(titleText)
         title(ax, titleText);
@@ -38,16 +35,13 @@ function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendT
         catch ME
             warning('MATLAB:%s', ME.identifier, ...
                 ['Error saving image to "%s".\n' ...
-                 'Attempting to save in the current directory instead.\n' ...
-                 'Error details: %s'], savePath, ME.message);
+                'Attempting to save in the current directory instead.\n' ...
+                'Error details: %s'], savePath, ME.message);
             savePath = fullfile(pwd, [filename, '.jpeg']);
             print(fig, savePath, '-djpeg');
         end
     end
 end
-
-
-
 
 % Data
 h = [0 3 6 9 12 15 18 21 24 27 30 33];
@@ -89,7 +83,11 @@ for i = 1:4
             ax(i).YScale = 'log';
             title = 'Log-Log Scale';  % Legend for log-log axes
     end
-    applyPlotFormatting(ax(i), fig1,title,'\ith \rm, km','\itD\rm, kg/m^{3}','',sprintf('subplot_%d', i));
+    if i==5
+        applyPlotFormatting(ax(i), fig1,title,'\ith \rm, km','\itD\rm, kg/m^{3}','','');
+    else
+        applyPlotFormatting(ax(i), fig1,title,'\ith \rm, km','\itD\rm, kg/m^{3}','', 'subplts');
+    end
 end
 
 % Adjust scales for specific subplots
@@ -135,5 +133,8 @@ Y2.Color = 'g';
 Y2.LineStyle = '-';
 Y2.LineWidth = 2;
 
+fprintf('D = %.3f e^{%.3f h}\n', res.a, res.b)
+
 % Add title and labels using the applyPlotFormatting function
-applyPlotFormatting(ax1, fig2, 'Exponential Fit', '\ith \rm, km', '\itD\rm, kg/m^{3}',{'Data Points', sprintf('\\itD\\rm = %.3f e^{%.3f h}', res.a, res.b)}, 'fitted_curve');
+applyPlotFormatting(ax1, fig2, 'Exponential Fit', '\ith \rm, km', '\itD\rm, kg/m^{3}', ...
+    {'Data Points', sprintf('$\\mathit{D} = %.3f e^{%.3f \\mathit{h}}$', res.a, res.b)}, 'fitted_curve');

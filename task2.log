@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.22)  9 JAN 2025 00:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.22)  9 JAN 2025 13:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1474,24 +1474,24 @@ runsystem(rm task2.aex)...executed.
 (./task2.aux)
 \openout1 = `task2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1549,7 +1549,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 137.
+Package hyperref Info: Link coloring OFF on input line 138.
 (./task2.out) (./task2.out)
 \@outlinefile=\write7
 \openout7 = `task2.out'.
@@ -1587,26 +1587,26 @@ Package: xparse 2023-10-10 L3 Experimental document command parser
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 140
+LaTeX Font Info:    Trying to load font information for U+msa on input line 141
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 140
+LaTeX Font Info:    Trying to load font information for U+msb on input line 141
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
-0.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-40.
+41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -1653,7 +1653,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148     \newpage
+l.149     \newpage
                   \centering\restoregeometry [1
 
 
@@ -1671,7 +1671,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169     \newpage
+l.170     \newpage
                    [1
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/sha
@@ -1688,15 +1688,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1724,7 +1715,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Overfull \hbox (1.85008pt too wide) detected at line 279
+Overfull \hbox (1.85008pt too wide) detected at line 272
 []
  []
 
@@ -1737,15 +1728,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1773,18 +1755,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-Underfull \hbox (badness 2644) in paragraph at lines 433--435
+Underfull \hbox (badness 2644) in paragraph at lines 415--417
 \OT1/cmr/m/n/12 Since this is a con-ven-tional in-te-gral, I
  []
 
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1875,6 +1849,15 @@ l.36             warning(
                          'MATLAB:%s', ME.identifier, ... [1
 
 ])
+<main/graphs_images/altitudes_vs_boiling_temperatures.jpeg, id=189, 1171.37625p
+t x 878.28125pt>
+File: main/graphs_images/altitudes_vs_boiling_temperatures.jpeg Graphic file (t
+ype jpg)
+<use main/graphs_images/altitudes_vs_boiling_temperatures.jpeg>
+Package pdftex.def Info: main/graphs_images/altitudes_vs_boiling_temperatures.j
+peg  used on input line 515.
+(pdftex.def)             Requested size: 510.78302pt x 382.98737pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1888,8 +1871,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.542 \newpage
-               [2] (./main/q2.m
+l.517     \includegraphics
+                          [width=0.8\textwidth]{main/graphs_images/1screen.png}
+[2]
+<main/graphs_images/1screen.png, id=241, 466.74374pt x 36.135pt>
+File: main/graphs_images/1screen.png Graphic file (type png)
+<use main/graphs_images/1screen.png>
+Package pdftex.def Info: main/graphs_images/1screen.png  used on input line 517
+.
+(pdftex.def)             Requested size: 408.62796pt x 31.63676pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1903,8 +1894,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21     ax.
-            TickDir = 'out'; [3]
+l.522 \newpage
+               [3 <./main/graphs_images/altitudes_vs_boiling_temperatures.jpeg>
+ <./main/graphs_images/1screen.png>] (./main/q2.m
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1918,9 +1910,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82             title 
-                       = 'Log-Linear Scale';  % Legend for log-linear axes
-[4])
+l.21     if 
+            ~isempty(legendText) && ~isequal(legendText, 'None') [4]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1934,8 +1925,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.578 ...main/main/q2.m}{main/q2.m}}}}]{main/q2.m}
-                                                   [5]
+l.82             ax(
+                    i).XScale = 'log'; [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1949,8 +1940,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.580 \newpage
-               [6] (./main/q3.m
+l.140     {'
+            Data Points', sprintf('$\\mathit{D} = %.3f e^{%.3f \\mathit{h}}$...
+[6])
+<main/graphs_images/subplts.jpeg, id=403, 1171.37625pt x 878.28125pt>
+File: main/graphs_images/subplts.jpeg Graphic file (type jpg)
+<use main/graphs_images/subplts.jpeg>
+Package pdftex.def Info: main/graphs_images/subplts.jpeg  used on input line 56
+0.
+(pdftex.def)             Requested size: 510.78302pt x 382.98737pt.
+<main/graphs_images/fitted_curve.jpeg, id=404, 1171.37625pt x 878.28125pt>
+File: main/graphs_images/fitted_curve.jpeg Graphic file (type jpg)
+<use main/graphs_images/fitted_curve.jpeg>
+Package pdftex.def Info: main/graphs_images/fitted_curve.jpeg  used on input li
+ne 561.
+(pdftex.def)             Requested size: 510.78302pt x 382.98737pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1964,8 +1969,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34         try
-                 [7]
+l.563     \includegraphics
+                          [width=0.4\textwidth]{main/graphs_images/2screen.png}
+[7 <./main/graphs_images/subplts.jpeg>]
+<main/graphs_images/2screen.png, id=409, 237.88875pt x 33.12375pt>
+File: main/graphs_images/2screen.png Graphic file (type png)
+<use main/graphs_images/2screen.png>
+Package pdftex.def Info: main/graphs_images/2screen.png  used on input line 563
+.
+(pdftex.def)             Requested size: 204.31009pt x 28.44946pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1979,9 +1992,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 applyPlotFormatting(
-                         ax(2), fig, 'Velocity vs Time', 'Time, s', 'Velocit...
-[8])
+l.569 \newpage
+               [8 <./main/graphs_images/fitted_curve.jpeg> <./main/graphs_image
+s/2screen.png>] (./main/q3.m
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1995,8 +2008,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.603 \newpage
-               [9] (./main/q4.m
+l.34         try
+                 [9]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2010,8 +2023,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 % 
-       Display results from matrix inverse method [10])
+l.95 applyPlotFormatting(
+                         ax(2), fig, 'Velocity vs Time', 'Time, s', 'Velocit...
+[10])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2025,8 +2039,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.636 \end{document}
-                     [11] (./task2.aux)
+l.592 \newpage
+               [11] (./main/q4.m
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13] (./task2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -2035,11 +2067,11 @@ Package rerunfilecheck Info: File `task2.out' has not changed.
 (rerunfilecheck)             Checksum: E7BF22B73F051D3723B91355B089129E;1095.
  ) 
 Here is how much of TeX's memory you used:
- 66548 strings out of 476106
- 1594804 string characters out of 5793932
- 2997865 words of memory out of 5000000
- 87253 multiletter control sequences out of 15000+600000
- 595186 words of font info for 165 fonts, out of 8000000 for 9000
+ 66585 strings out of 476106
+ 1596260 string characters out of 5793932
+ 3009000 words of memory out of 5000000
+ 87280 multiletter control sequences out of 15000+600000
+ 592297 words of font info for 156 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  102i,15n,107p,987b,2905s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></u
@@ -2058,10 +2090,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on task2.pdf (24 pages, 294903 bytes).
+Output written on task2.pdf (26 pages, 761069 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 691 compressed objects within 7 object streams
- 421 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 790 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 431 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

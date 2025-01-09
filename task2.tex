@@ -129,7 +129,8 @@
 
 \title{\vspace{3em} \Huge \textbf{Engineering\\ Mathematics and Computing}\\ \vspace{1em} \Large Task 2: Coursework Assessment}
 \author{Student Name: Sakariye Abiikar\\ KID: 2371673}
-\date{Last Updated: \today,\ \currenttime\\ Submission Deadline: Thursday \(9^{\text{th}}\) January, 2025, 5pm \\[1em] Git Repo : \color{blue}\url{https://github.com/sakx7/mathcompuni2}}
+\date{Last Updated: \today,\
+     \currenttime\\ Submission Deadline: Thursday \(9^{\text{th}}\) January, 2025, 5pm \\[1em] Git Repo : \color{blue}\url{https://github.com/sakx7/mathcompuni2}}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -209,15 +210,7 @@
     Factorising we get the final solution as:
     \[ \boxed{y(x) = e^{9x} (c_1 + c_2 x)} \]
     \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
-    \[
-    \begin{tblr}{
-            colspec = {r c},
-            row{1} = {font=\bfseries}
-        }
-        \textbf{Domain:} & x \in \mathbb{R} \\
-        \textbf{Interval:} & (-\infty, \infty)
-    \end{tblr}
-    \]
+    \[(-\infty, \infty) = \left\{x \in \mathbb{R} \;\; | -\infty < x < \infty\right\}\]
     This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value.
        
     \newpage
@@ -316,11 +309,8 @@
     \begin{tcolorbox}[title={\color{black}\section{Q6}}, colback=white, colframe=\ni, boxrule=1mm, width=1\textwidth]
         6. Obtain the general solution of \( \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 5 \)
     \end{tcolorbox}
-
         \[ \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 5 \]
-        
         Since this is \textbf{non-homogenous} we need to solve for the \textbf{complementary solution (\(\bm{y_c}\))} and then the \textbf{particular solution ($\bm{y_p}$)} the general form of the solution the addition of these $$y(t)=y_c(t)+y_p(t)$$
-
     \begin{minipage}[t]{0.5\textwidth}
             First lets solve the complementary solution, which solves the associated homogeneous equation:
             \[ \frac{d^2 y}{dx^2} - 2 \frac{dy}{dx} - 48y = 0 \]
@@ -352,15 +342,7 @@
         plugging in the solved values we have
         \[\boxed{y(x) = c_1 e^{8x} + c_2 e^{-6x} - \frac{5}{48}} \]    
         \textbf{Interval of validity}: Nothing really stands out, no singularities or undefined behaviours. Therefore, the interval of validity is:
-        \[
-        \begin{tblr}{
-                colspec = {r c},
-                row{1} = {font=\bfseries}
-            }
-            \textbf{Domain:} & x \in \mathbb{R} \\
-            \textbf{Interval:} & (-\infty, \infty)
-        \end{tblr}
-        \]
+        \[(-\infty, \infty) = \left\{x \in \mathbb{R} \;\; | -\infty < x < \infty\right\}\]
         This means the solution is valid for all real values of \(x\). The constant \(C\) does not effect the solutions validity regardless of its value.
     \end{minipage}        
     
@@ -458,15 +440,7 @@
     In so \(y\) as an explicit solution is:
     \[\boxed{y = \frac{5}{2 \sin t} \left( t - \frac{\sin 2t}{2} \right) + \frac{C}{\sin t}}\]
     \textbf{Interval of validity}: \( \sin(t) \) is undefined where \( \sin(t) = 0 \), which occurs at \( t = n\pi \), where \( n \) is any integer. Therefore, the interval of validity of the solution is:
-            \[
-    \begin{tblr}{
-            colspec = {r c},
-            row{1} = {font=\bfseries}
-        }
-        \textbf{Domain:} & t \in \mathbb{R} : \frac{t}{\pi} \notin \mathbb{Z}\\
-        \textbf{Interval:} & \bigcup_{n \in \mathbb{Z}} (n\pi, (n+1)\pi)
-    \end{tblr}
-    \]
+    \[\mathbb{R} \setminus \{n\pi : n \in \mathbb{Z}\} = \left\{ t \in \mathbb{R} \;\middle|\; t \neq n\pi \;\; \forall n \in \mathbb{Z} \right\}\]    
     This means the solution is valid for all \( t \) being real, except for those values where \( \frac{t}{\pi} \) is an integer. The constant \(C\) does not effect the solutions validity regardless of its value.
     
     
@@ -538,6 +512,12 @@
 \end{tcolorbox}
 
 \lstinputlisting[style=matlab, title=\textbf{\textcolor{\link}{\texttt{\href{https://github.com/sakx7/mathcompuni2/blob/main/main/q1.m}{main/q1.m}}}}]{main/q1.m}
+\includegraphics[width=1\textwidth]{main/graphs_images/altitudes_vs_boiling_temperatures.jpeg}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{main/graphs_images/1screen.png}
+\end{center}
+Hard to actually add input to this type (data type) of question.
+
 
 \newpage
 
@@ -576,6 +556,15 @@
 \end{tcolorbox}
 
 \lstinputlisting[style=matlab, title=\textbf{\textcolor{\link}{\texttt{\href{https://github.com/sakx7/mathcompuni2/blob/main/main/q2.m}{main/q2.m}}}}]{main/q2.m}
+
+\includegraphics[width=1\textwidth]{main/graphs_images/subplts.jpeg}
+\includegraphics[width=1\textwidth]{main/graphs_images/fitted_curve.jpeg}
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{main/graphs_images/2screen.png}
+\end{center}
+Again hard to actually add input to this type (data type) of question.
+
+
 
 \newpage
 

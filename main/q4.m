@@ -2,7 +2,8 @@
 
 % Define symbolic variables for resistance and voltages
 
-syms R v_1 v_2
+syms R v_1 v_2 % syms requires Symbolic Math Toolbox.
+
 
 % Create the node admittance matrix (NAM) for the circuit
 
@@ -10,12 +11,11 @@ NAM = [2*R -R 0; -R 3*R -R; 0 -R 2*R];
 b = [v_1; 0; v_2];
 I = sym('I', [3, 1]);
 
-% Method 1: Solve system using Cramer's Rule
+% Method 1: Solve system using  division (Cramer''s Rule)
 
 % Calculate the determinant of the original matrix
 delta_0 = det(NAM);
-
-% Calculate currents using Cramer's Rule by replacing columns with b vector
+% Replace columns with b vector
 for k = 1:3
     mNAM = NAM;
     mNAM(:, k) = b;
@@ -23,18 +23,22 @@ for k = 1:3
     I(k) = delta_k / delta_0;
 end
 
-% Add calculations for branch currents i4 and i5
+% Add branch currents i4 and i5
 I = [I;I(1)-I(2);I(2)-I(3)];
 
-% Display results from Cramer's Rule method
+% Display results
 disp('Currents using division (Cramer''s Rule):')
 for k = 1:length(I)
     fprintf('i%d = %s\n', k, char(I(k)))
 end
 
 % Method 2: Solve system using matrix inverse
+
+% Use inverse function
 NAM_inv = inv(NAM);
+% Solution bro
 I2 = NAM_inv*b;
+% Add branch currents i4 and i5
 I2 = [I2;I2(1)-I2(2);I2(2)-I2(3)];
 
 % Display results from matrix inverse method
@@ -44,15 +48,17 @@ for k = 1:length(I2)
 end
 
 % Part B: Numerical computation with user-provided values
+
 disp('----------------------------------------------------------')
 
 % Get numerical values from user for resistance and voltages
+
 Rs = input('Give me the R in ohms: ');
 v1s = input('Give me the v_1 in volts: ');
 v2s = input('Give me the v_2 in volts: ');
 
 % Substitute numerical values into symbolic solutions and compute currents
-% Display results for both methods with 6 decimal precision
+
 I_num_c = vpa(subs(I, {R, v_1, v_2}, {Rs, v1s, v2s}), 6);
 disp('Currents with given R and v_1, v_2 using Cramer''s Rule:')
 for k = 1:5
