@@ -17,7 +17,7 @@ function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendT
     ax.YMinorTick = 'on';
     ax.TickDir = 'out';
     ax.FontName = 'Calibri';
-    ax.FontSize = 9;
+    ax.FontSize = 12;
     if ~isempty(legendText) && ~isequal(legendText, 'None')
         legend(ax, legendText, 'Location', 'best', 'Interpreter', 'latex');
     end
@@ -43,29 +43,24 @@ function applyPlotFormatting(ax, fig, titleText, xlabelText, ylabelText, legendT
     end
 end
 
-
 % Prompt user for parameters
-disp('---------Input Parameters--------');
-m = input('Enter the mass (m) in kg: ');
-k = input('Enter the spring constant (k) in N/m: ');
-x0 = input('Enter the initial displacement (x0) in m: ');
-
-v0 = input('Enter the initial velocity (v(0)) IVP in m/s: ');
-
-c1 = input('Case 1: Enter the first damping coefficient (c1) in Ns/m: ');
-c2 = input('Case 2: Enter the second damping coefficient (c2) in Ns/m: ');
-
+disp('--------- Input Parameters --------');
+m = input('Enter mass (m) in kg: ');
+k = input('Enter spring constant (k) in N/m: ');
+x0 = input('Enter initial displacement (x0) in m: ');
+v0 = input('Enter initial velocity (v(0)) IVP in m/s: ');
+c1 = input('Case 1: Enter first damping coefficient (c1) in Ns/m: ');
+c2 = input('Case 2: Enter second damping coefficient (c2) in Ns/m: ');
 disp('--------------------------------');
 
 % Define symbolic variables
-syms x(t) c; % syms requires Symbolic Math Toolbox.
+syms x(t) c; % Define symbolic variables for displacement and damping
 
 % Differential Equation
-eq = m*diff(x, t, 2) + c*diff(x, t) + k*x == 0;
-disp('Differential Equation:');
-formattedEq = sprintf('%s * d^2x/dt^2 + %s * dx/dt + %s x = 0', ...
-    (m), (c), (k));
-disp(formattedEq);
+eq = m * diff(x, t, 2) + c * diff(x, t) + k * x == 0;
+disp('Differential Equations:');
+fprintf('For c1 : %.2f * d^2x/dt^2 + %.2f * dx/dt + %.2f * x = 0\n', m, c1, k);
+fprintf('For c2 : %.2f * d^2x/dt^2 + %.2f * dx/dt + %.2f * x = 0\n', m, c2, k);
 
 % Velocity
 vel = diff(x, t);
@@ -79,10 +74,20 @@ disp('Solving differential equations...');
 Sol1 = dsolve(subs(eq, c, c1), [cond1, cond2]);
 Sol2 = dsolve(subs(eq, c, c2), [cond1, cond2]);
 
-disp('Solution for c1:');
+% Display the displacement solutions
+disp('Solution for c1 (x(t)):');
 disp(Sol1);
-disp('Solution for c2:');
+disp('Solution for c2 (x(t)):');
 disp(Sol2);
+
+% Compute and display the velocity (v(t)) as the derivative of the solutions
+Vel1 = diff(Sol1, t);
+Vel2 = diff(Sol2, t);
+
+disp('Velocity for c1 (v(t)):');
+disp(Vel1);
+disp('Velocity for c2 (v(t)):');
+disp(Vel2);
 
 % Time ranges
 tmin = 0;
@@ -90,28 +95,30 @@ tmax1 = 20;
 tmax2 = 10;
 
 % Plotting
-disp('Generating plots...');
-fig = figure('Position', [100, 100, 800, 600]);
+fig = figure('Position', [100, 100, 800, 800]);
 
-for i = 1:2
-    ax(i) = subplot(2, 1, i);
-end
+% Create LaTeX strings for legend
+legendStr1_disp = latex(Sol1);
+legendStr2_disp = latex(Sol2);
+legendStr1_vel = latex(Vel1);
+legendStr2_vel = latex(Vel2);
 
-% Plot solutions
-L1 = fplot(Sol1, [tmin, tmax1], 'Parent', ax(1));
-L1.Color = [0.5, 0, 0.7]; 
-L1.LineWidth = 3;
-L1.LineStyle = '-'; 
+% Escape backslashes in the LaTeX string
 
-L2 = fplot(Sol2, [tmin, tmax2], 'Parent', ax(2));
-L2.Color = [0.5, 0, 0.7]; 
-L2.LineWidth = 3;
-L2.LineStyle = '-'; 
+% Displacement plot
+ax1 = subplot(2,1,1);
+hold on;
+fplot(Sol1, [tmin, tmax1], 'r', 'LineWidth', 2);
+fplot(Sol2, [tmin, tmax2], 'b', 'LineWidth', 2);
+hold off;
+applyPlotFormatting(ax1, fig, 'Displacement vs Time', 'Time (s)', 'Displacement (m)', ...
+    {['$' legendStr1_disp '$'], ['$' legendStr2_disp '$']}, '');
 
-% Apply formatting
-applyPlotFormatting(ax(1), fig, 'Displacement vs Time', 'Time, s', 'Displacement, m', '', '');
-disp('Applied formatting to subplot 1.');
-applyPlotFormatting(ax(2), fig, 'Velocity vs Time', 'Time, s', 'Velocity, m/s', '', 'displacement_velocity_plot');
-
-disp('Applied formatting to subplots.');
-disp('Plots generated and saved if filename provided.');
+% Velocity plot
+ax2 = subplot(2,1,2);
+hold on;
+fplot(Vel1, [tmin, tmax1], 'r', 'LineWidth', 2);
+fplot(Vel2, [tmin, tmax2], 'b', 'LineWidth', 2);
+hold off;
+applyPlotFormatting(ax2, fig, 'Velocity vs Time', 'Time (s)', 'Velocity (m/s)', ...
+    {['$' legendStr1_vel '$'], ['$' legendStr2_vel '$']}, 'damped_oscillation');

@@ -58,6 +58,8 @@ intercept = p(2);
 % Display results
 fprintf('The slope of the line (rate of change) is: %.4f\n', slope);
 fprintf('The y-intercept of the line is: %.4f\n', intercept);
+disp('-------------Linear Function-----------------')
+fprintf('T_b = %.4f h + %.4f \n', slope, intercept);
 
 % Generate line of best fit
 x_fit = linspace(min(h), max(h), 100);

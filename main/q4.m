@@ -1,24 +1,21 @@
-% Part A
+% 1. Finding currents in terms of voltage and resistance
+
 
 % Define symbolic variables for resistance and voltages
-
 syms R v_1 v_2 % syms requires Symbolic Math Toolbox.
 
-
 % Create the node admittance matrix (NAM) for the circuit
-
 NAM = [2*R -R 0; -R 3*R -R; 0 -R 2*R];
 b = [v_1; 0; v_2];
 I = sym('I', [3, 1]);
 
 % Method 1: Solve system using  division (Cramer''s Rule)
 
-% Calculate the determinant of the original matrix
 delta_0 = det(NAM);
 % Replace columns with b vector
 for k = 1:3
     mNAM = NAM;
-    mNAM(:, k) = b;
+    mNAM(:,k) = b;
     delta_k = det(mNAM);
     I(k) = delta_k / delta_0;
 end
@@ -47,7 +44,7 @@ for k = 1:length(I2)
     fprintf('i%d = %s\n', k, char(I2(k)))
 end
 
-% Part B: Numerical computation with user-provided values
+% 2. Numerical values for the inputed resistance and voltages to the derived currents
 
 disp('----------------------------------------------------------')
 

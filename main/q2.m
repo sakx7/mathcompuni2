@@ -60,8 +60,8 @@ for i = 1:4
     L(i) = line(data(1, :), data(2, :), 'Parent', ax(i));
     
     % Configure line properties
-    L(i).Color = [0.2, 0.7, 0];
-    L(i).LineWidth = 3;
+    L(i).Color = 'b';
+    L(i).LineWidth = 2;
     L(i).LineStyle = '-';
     
     % Apply axis transformations based on subplot
@@ -121,20 +121,20 @@ ax1 = subplot(1, 1, 1);
 
 % Plot original data points
 Y1 = line(data(1, :), data(2, :), 'Parent', ax1);
-Y1.Color = 'r';
+Y1.Color = 'k';
 Y1.LineStyle = 'none';
-Y1.LineWidth = 2;
-Y1.Marker = 'o';
+Y1.LineWidth = 1.5;
+Y1.Marker = 'x';
 Y1.MarkerSize = 8;
 
 % Plot fitted curve
 Y2 = line(hplot, Dplot, 'Parent', ax1);
-Y2.Color = 'g';
+Y2.Color = 'b';
 Y2.LineStyle = '-';
 Y2.LineWidth = 2;
 
 fprintf('D = %.3f e^{%.3f h}\n', res.a, res.b)
 
 % Add title and labels using the applyPlotFormatting function
-applyPlotFormatting(ax1, fig2, 'Exponential Fit', '\ith \rm, km', '\itD\rm, kg/m^{3}', ...
+applyPlotFormatting(ax1, fig2, 'Exponential Fit', 'Height  \it(h)  [km]', 'Density  (D)  [kg/m^{3}]', ...
     {'Data Points', sprintf('$\\mathit{D} = %.3f e^{%.3f \\mathit{h}}$', res.a, res.b)}, 'fitted_curve');
